@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Persamaan Garis Lurus dan Fungsi Kuadrat 2</h3>
+          <p>Sekarang lo akan belajar beberapa hal dalam fungsi kuadrat. Diantaranya, pengaruh koefisien fungsi kuadrat terhadap grafik fungsi kuadrat tersebut, bagaimana mencari titik puncak dari suatu fungsi kuadrat, make turunan untuk nyari titik puncak, dan bikin fungsi kuadrat baru menggunakan titik puncak. Langsung aja bahas satu-satu</p>
+            <h4>Pengaruh koefisien FK terhadap grafik</h4>
+              <p>Bentuk umum fungsi kuadrat biasanya ditulis</p>
+              <p class="eq">$$ y = ax^{2} + bx + c, \quad a \neq 0 $$</p>
+              <br>
+              <br>
+              <br>
+              <p>Disitu lo liat ada <em>a, b,</em> dan <em>c</em>. Masing-masing berguna untuk:
+                <ol> <li>Koefisien a berpengaruh sebagai penentu seberapa kuncupnya si kurva fungsi tersebut. Semakin besar si a semakin kuncup si kurva.</li>
+                <li>Koefisien c berfungsi sebagai penentu letak si kurva relatif terhadap sumbu y. Maksudnya apa? Ya, semakin gede si c semakin tinggi letak kurva-nya, semakin kecil si c semakin rendah letaknya.</li>
+                <li>Koefisien b berkerja dengan cara yang beda. Intinya sih kalo a . b > 0 maka titik puncaknya berada di   kiri sumbu y. Kalo a . b < 0 maka titik puncaknya berada di kanan sumbu y. Lo bakal lebih ngerti lagi tentang pengaruh koefisien b ini setelah belajar titik puncak</li> </ol></p>
+            <h4>Mencari titik puncak</h4>
+                <p>Di point sebelum gue bilang kalo koefisien b berpengaruh terhadap titik puncak. Pengaruhnya kaya gimana? Jadi gini, kalo kurva kuadrat itu keliatan kan ada puncaknya. Kalo kurvanya terbuka keatas berarti puncaknya di bawah. Kalo terbuka ke bawah ya berarti puncaknya diatas. Nah sekarang tarik garis vertikal di titik itu terus liat, seimbang kan kanan dan kiri dari kurva itu? Titik simetris dari kurva itu kebetulan merupakan titik puncak. Terus gimana cara nyari titik itu? Lo bisa pake:</p>
+                <p class="eq"> $$ x_{p} = \frac{-b}{2a} \qquad y_{p} = \frac{-D}{4a} $$ </p>
+                <br>
+                <br>
+                <br>
+                <br>
+            <h4>Mencari titik puncak menggunakan turunan</h4>
+                <p>Sebelumnya dijelasin bahwa gradien fungsi kuadrat berubah-ubah. Udah dijelasin juga bahwa turunan dari persamaan garis adalah gradiennya. Kalo turusan fungsi sama dengan nol, lo bukan bisa dapet titik puncaknya. Karena garis yang menyinggung titik puncak kurva pasti gradiennya 0. jadi:</p>
+                <p class="eq">$$
+                  f(x) = ax^{2} + bx + c \\
+                  f'(x) = 2ax +b \\
+                  f'(x) = 0 \\
+                  2ax + b = 0 \\
+                  x = \frac{-b}{2a} \\$$</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>Dan nilai <em>x</em> itu lo masukin deh ke fungsi awal, dapetlah nilai <em>y</em> puncaknya.</p>
+                <br>
+            <h4>Translasi fungsi kuadrat</h4>
+                <p>Lo juga bisa geser fungsi kuadrat baru dengan cara</p>
+                <p class="eq">$$
+                  y = ax^{2} \ \rightarrow \ \binom{xp}{yp} \Rightarrow \ y-yp = a \ (x-xp)^{2}
+                  $$</p>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+              <p>Sekali lagi jangan ngapalin doang ya, tonton videonya, pahami baik-baik. Selamat belajar! </p>
+{% endblock %}

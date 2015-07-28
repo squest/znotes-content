@@ -1,13 +1,20 @@
-[{:kode "CC 123"
-  :contents [{:title "Jawara"
-              :filename "botoh"}]}
+[{:kode "CC 2635"
+  :contents [{:title "Postulat Dasar"
+              :filename "cc2635x01"}]}
+ {:kode "CC 2574"
+  :contents [{:title "Persamaan Kuadrat"
+              :filename "cc2574x01"}]}
+
  {:kode "CC 234"
-  :contents [{:title "Busang"
-              :filename "brutal"}
-             {:title "Protocol"
-              :filename "mereka"}]}
- {:kode "CC 2034"
-  :contents [{:title "Purnawaktu"
-              :filename "cc2034x01"}
-             {:title "wateva"
-              :filename "cc2034x02"}]}]
+  :contents [{:title "Persamaan Garis Lurus"
+              :filename "cc2584x01"}
+             {:title "Fungsi Kuadrat"
+              :filename "cc2584x02"}]}
+ {:kode "CC 2419"
+  :contents [{:title "Fungsi Kuadrat DP"
+              :filename "cc2419x01"}]}
+
+
+  {:kode "CC 2416"
+   :contents [{:title "Grafik DP"
+               :filename "cc2416x01"}]}]
