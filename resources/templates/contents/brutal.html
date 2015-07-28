@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="tab-content">
+   <div id="home" class="tab-pane fade in active">
+      <h3>Fungsi Kuadrat DP</h3>
+
+      <p>Ini cuma rangkuman aja. Kalo lo ada yang gak ngerti kenapa begini, liat lagi teorinya.</p>
+      <br>
+      <h4>Bentuk umum fungsi kuadrat</h4>
+
+      <p class="eq">$$ F(x) = ax^{2} + bx + c, \quad a \neq 0 $$</p>
+      <br>
+      <br>
+      <br>
+      <ol>
+         <li>Jika koefisien a nilainya positif maka kurva terbuka ke atas, jika negatif terbuka ke bawah.</li>
+         <li>Koefisien c menyatakan letak si kurva relatif terhadap sumbu y.</li>
+         <li> Jika a . b > 0 maka titik puncaknya di kiri sumbu y. Jika a . b < 0 maka titik puncaknya di kanan sumbu
+            y.
+         </li>
+      </ol>
+      </p>
+      <h4>Titik puncak/simetri</h4>
+
+      <p>sumbu:</p>
+
+      <p class="eq"> $$ x_{p} = \frac{-b}{2a} \qquad y_{p} = \frac{-D}{4a} \qquad y_{p} = F (x_{p}) $$ </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h4>Titik puncak menggunakan turunan</h4>
+
+      <h4 class="eq">
+         $$
+         f(x) = ax^{2} + bx + c \\
+         f'(x) = 2ax +b \\
+         f'(x) = 0 \\
+         2ax + b = 0 \\
+         x = \frac{-b}{2a} \\$$
+      </h4>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <p>Dan nilai <em>x</em> itu lo masukin deh ke fungsi awal, dapetlah nilai <em>y</em> puncaknya.</p>
+      <br>
+      <h4>Translasi fungsi kuadrat</h4>
+
+      <p class="eq">$$
+         y = ax^{2} \ \rightarrow \ \binom{xp}{yp} \Rightarrow \ y-yp = a \ (x-xp)^{2}
+         $$</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h4>Fungsi Kuadrat dengan akar-akar</h4>
+
+      <p class="eq">$$
+         F(x) = a (x-x_{1})(x-x_{2})
+         $$</p>
+
+   </div>
+   <div id="menu1" class="tab-pane fade">
+      <h3></h3>
+
+      <p></p>
+   </div>
+
+   {% endblock %}

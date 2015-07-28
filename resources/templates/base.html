@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <script type="text/javascript"
+           src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+   </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="/css/screen.css">
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript"
+           src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+   </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+      <div class="navbar-header">
+         <a class="navbar-brand" href="/">WebSiteName</a>
+      </div>
+      <div>
+         <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+         </ul>
+      </div>
+   </div>
+</nav>
+
+<div id="rootwizard" class="tabbable tabs-left col-xs-2">
+   {% for cc in ccs %}
+   <ul>
+      {{cc.kode}}
+      {% for content in cc.contents %}
+      <li>
+         <a href="/content/{{content.filename}}">
+            {{content.title}}
+         </a>
+      </li>
+      {% endfor %}
+   </ul>
+   {% endfor %}
+</div>
+
+
+<div class="container col-xs-8">
+   <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Notes</a></li>
+      <li><a data-toggle="tab" href="#menu1">Videos</a></li>
+   </ul>
+
+   <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+         {% block content %}
+
+         {% endblock %}
+      </div>
+      <div id="menu1" class="tab-pane fade">
+         <h3></h3>
+
+         <p></p>
+      </div>
+   </div>
+</div>
+<footer>
+   <br/>
+   <hr/>
+   <p>
+      Copyright &copy; 2015 PT Zenius Education
+   </p>
+   <br/><br/><br/>
+</footer>
+
+</body>
+</html>
