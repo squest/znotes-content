@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Pertidaksamaan Nilai Mutlak</h3>
+  <p>Halo, kali ini lo akan berkenalan dengan <em>absolute value</em>. Bukan <em>absolute value</em> yang dipermasalahkan oleh Om Nietzsche ya. Itu mah <em>absolute value</em> yang gak jelas. Kalo yang ini mah yang jelas. Secara definisi, <em>Absolute value</em> atau nilai mutlak adalah</p>
+  <div class="row"><div class="col-xs-2">
+    $$\left | x \right |\left\{\begin{matrix}
+    x & kalo \  x>0  & \\
+    -x& kalo \ x<0 &
+    \end{matrix}\right. $$
+  </div></div>
+  <p>Jadi, nilai mutlak dari x adalah; kalo x-nya positif ya berarti mutlaknya tetep x. Kalo x-nya negatif berarti mutlaknya positif. Bisa disebut juga, mutlak x yang negatif adalah negatif dari negatif x (-(-x)). Ya tetep positif-positif juga. Eh iya, x disini bisa lo ganti apa aja ya. Mau x-nya diganti dengan 3, diganti □, diganti kambing, apaan kek gitu. Pokoknya, gak peduli dia apa, kalo dia positif berarti mutlaknya tetep positif, kalo negatif ya tetep berarti negatif dari negatifnya.</p>
+  <p>Kalo di garis bilangan, nilai mutlak juga bisa disebut sebagai "seberapa jauh sesuatu dari titik 0". Seberapa jauh angka 3 dari 0? ya 3 lah. Seberapa jauh -3 dari 0? ya 3 juga lah su! Arti 'jarak dari 0' sama kan dengan definisi nilai mutlak kita di atas? Masih bingung? Oke gini deh. Misalnya lo lahir, beranjak dewasa dan sampe sekarang di tol cipularang. Tepatnya di kilometer 69. He he. Terus sekolah ada di kilometer 60. Kalo ditanya orang "Berapa jarak dari rumah lo ke sekolah?" Pasti lo jawab 9km kan. Bukan (-9)km. Kenapa gak lo jawab (-9)km? Yoi men, secara gak sadar lo narik <strong>nilai mutlak</strong> dari jarak rumah lo ke sekolah. Kira-kira begini lah yang terjadi, lo tau bahwa:</p>
+  <div class="row"><div class="col-xs-2">
+    $$ \left | x \right | = \ -x, \qquad kalo \quad x < 0 \\  $$
+  </div></div>
+  <p>Terus terhadap rumah dan sekolah lo,</p>
+  <div class="row"><div class="col-xs-2">
+    $$ \left | 60-69 \right | = -(60-69), \qquad karena \ (60-69) < 0 \\
+       \left | 60-69 \right | = (-(-9)) \ = \ 9  $$
+  </div></div>
+  <p>Sekarang kalo ada contoh kasus</p>
+  <div class="row"><div class="col-xs-2">
+    $$ 3 < x < 5 \\
+     .\\
+    Berapa \ nilai \ x \ yang \ memenuhi \ pertidaksamaan \ \left | 2x-5 \right | \ + \ \left | x-6 \right | \ - \ 5 \ < \ 0 \ ? $$
+  </div></div>
+  <p>Di atas dikasih tau kalo nilai x-nya berkisar diantara 3 dan 5. Nah di soalnya ada dua tanda mutlak kan, lo aja kerjain satu satu. Tanda mutlak pertama bakal gimana? bakal tetep atau jadi negatifnya? Lo liat, dengan x yang nilainya berkisar antara 3 dan 5, mungkin gak (2x-5) nilainya negatif? ya kagak lah men. Kalo yang kedua gimana? Dengan x yang segitu, berapa nilai (x-6)? Pokoknya gak mungkin positif lah ya, negatif berarti dia nilainya. Kalo gitu apa yang dilakukan kalo di dalam tanda mutlak isinya negatif? Yups! Lo kasih lagi negatif supaya jadi positif. Maka dari itu, jadilah (-(x-6)). yang mana (6-x). Jadi kalo ditulis secara matematik </p>
+  <div class="row"><div class="col-xs-2">
+    $$ 3 < x < 5 \\
+     .\\
+    \left | 2x-5 \right | \ + \ \left | x-6 \right | \ - \ 5 \ < \ 0 \ \\
+    (2x-5) \ + \ (-(x-6)) \ - 5 \ < 0 \\
+    2x \ - \ 5 \ + \ -x \ + \ 6 \ - \ 5 \ < \ 0 \\
+    x \ - \ 4 \ < 0 \\
+    x \ < \ 4
+     $$
+  </div></div>
+  <p>Tapi gimana nih. Di satu sisi, kita dikasih tau kalo nilai x itu berkisar antara 3 dan 5. Di sisi lain, kita dapet kalo nilai x itu kurang dari 4. Gimana dong? Nah, disini kita gunaka operasi ∧. jadi </p>
+  <div class="row"><div class="col-xs-2">
+    $$ 3 \ < \ x \ < \ 5, \quad ∧ \qquad x \ < \ 4 \\
+    ⇒ 3 \ < \ x \ < \ 4 $$
+  </div></div>
+  <p>Dapet deh. Walau gampang, tapi asik kan? He he. Ini cuma satu dari banyak kasus-kasus menarik. Lengkapnya, lo tonton deh videonya Sabda. Asik ini men soal absolute value. </p>
+{% endblock %}

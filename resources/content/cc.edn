@@ -27,4 +27,7 @@
                :filename "cc2575x01"}]}
    {:kode "CC 2576"
     :contents [{:title "Pertidaksamaan Dasar 2"
-                :filename "cc2576x01"}]}]
+                :filename "cc2576x01"}]}
+    {:kode "CC 2577"
+     :contents [{:title "Pertidaksamaan Dasar Nilai Mutlak"
+                 :filename "cc2577x01"}]}]
