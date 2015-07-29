@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Pertidaksamaan Nilai Mutlak Lanjutan</h3>
+    <p>Halo! Bagian ini adalah lanjutan dari bagian sebelumnya. Selain bakal mantepin apa yang udah lo pelajari di note sebelumnya, lo juga akan bermain-main dengan grafik tanda mutlak di sini. Di bab ini ada banyak kasus yang bakal Kak Sabda bahas. Di note ini, kayanya kita cuma bakal bahas satu kasus aja. Kasus-kasus lainnya lo tonton aja deh videonya Kak Sabda. </p>
+    <h4>Titik kritis dan grafik</h4>
+    <p>Misalnya gue punya fungsi</p>
+    <div class="row"><div class="col-xs-2">$$
+      y \ = \ \left | x \right | \ + \ \left | x-8 \right |  \
+    $$</div></div>
+    <p>Kira-kira gimana grafiknya? Susah juga sih kalo langsung <em>plek</em> lo langsung bayangin gambarnya gitu. Enaknya sih lo bagi jadi beberapa bagian. Kalo begini, peran titik kritis ini penting banget. Pertama-tama, coba deh tentuin dulu titik kritis dari |x| dan |x-8|. Jelas kan yang satu titik kritisnya di titik 0, yang satu lai titik kritisnya di titik 8. Sekarang, Lo ubah fungsi di atas untuk nilai x yang kurang dari nol. <br>
+    Karena kalo di bawah nol nilai mereka jadi negatif, maka</p>
+    <div class="row"><div class="col-xs-2">
+    $$ y \ = \ \left | x \right | \ + \ \left | x-8 \right |  \ \\
+       y \ = \ (-x) \ + \ (-(x-8)) \\
+       y \ = \ -2x  \ + \ 8 \\   $$
+    </div></div>
+    <p>Abis itu lo gambar deh garis (y = -2x + 8) dari -∞ ampe titik 0. Cukup, sekarang kerjain bagian lain.</p>
+    <p>Kalo dari titik 0 sampe titik delapan gimana? Untuk yang |x| kan berubah tuh nilainya. Jadi lo otak atik lagi fungsi lo jadi</p>
+    <div class="row"><div class="col-xs-2">
+    $$ y \ = \ \left | x \right | \ + \ \left | x-8 \right |  \ \\
+       y \ = \ (x) \ + \ (-(x-8)) \\
+       y \ = \ 8 \\   $$
+    </div></div>
+    <p>Nah dari titik 0 ampe titik 8, lo gambar deh garis (y=8)</p>
+    <p>Oke, terakhir. Karena nilainya berubah lagi karena kita loncat salah satu titik kritis lagi. Atur lagi itu fungsi jadi</p>
+    <div class="row"><div class="col-xs-2">
+    $$ y \ = \ \left | x \right | \ + \ \left | x-8 \right |  \ \\
+       y \ = \ (x) \ + \ (x-8) \\
+       y \ = \ 2x  \ - \ 8 \\   $$
+    </div></div>
+    <p>Lagi, lo gambar fungsi ini dari titik 8 ampe titik ∞.</p>
+    <p>Asik kan? Lo punya tiga fungsi linier berbeda di tiap tiap bagian yang dipisahin oleh titik kritis. Oke seperti itu lah grafik</p>
+    <div class="row"><div class="col-xs-2">$$
+      y \ = \ \left | x \right | \ + \ \left | x-8 \right |  \
+    $$</div></div>
+    <p>Eits, jangan puas dulu lo! Masih banyak kasus lainnya yang sama atau lebih kadar keasikannya di videonya Kak Sabda. Tunggu apa lagi men? Tonton sekarang video-videonya.</p>
+{% endblock %}
