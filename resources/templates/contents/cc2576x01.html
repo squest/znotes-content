@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3>Pertidaksamaan Dasar 2</h3>
+      <p>Bagian ini adalah lanjutan dari Pertidaksamaan Dasar. Kalo lo belom liat, mendingan balik lagi liat yang sebelumnya. Di sini, lo akan belajar cara-cara yang berlaku ke kasus tertentu. Kasus yang gimana aja yang akan dibahas? Ayo kita pelajari satu-satu.</p>
+      <br>
+      <p>Masih inget kan note sebelumnya di note sebelumnya dibahasa logika ∧ dan ∨, nah sekarang kita implementasiin di sini.<br> Kalo lo nemu </p>
+      <div class="row"><div class="col-xs-2">
+        $$ a < b < c \\ $$
+        Ini berarti juga,
+        $$ a < b \   ∧ \ b < c  $$
+      </div></div>
+      <p> Terus kalo lo nemu </p>
+      <div class="row"><div class="col-xs-2">
+        $$ x_{1} < 2 \\
+          dan \\
+          x_{2} < 4 $$ </div></div>
+          <p>maka x<sub>1</sub> ∧ x<sub>2</sub> adalah</p>
+          <div class="row"><div class="col-xs-2">
+        $$ x < 2 $$</div></div>
+          <p>Kenapa kaya gini? Inget, pengoperasian (∧) harus memenuhi keduanya.</p>
+          <p>Sekarang, kalo diminta x<sub>1</sub> ∨ x<sub>2</sub> gimana? Yaudah gampang aja, jadi </p>
+          <div class="row"><div class="col-xs-2">
+        $$ x < 4 $$</div></div>
+          <p>Kenapa? karena (∨) cuma butuh salah satu syarat aja supaya bisa terpenuhi.</p>
+          <p>Masih bingung? </p>
+        <p>Abis itu, lo akan belajar tentang konsep titik kritis. Titik kritis adalah titik di mana nilai suatu permintaan bisa bernilai positif di atas titik itu, dan bernilai negatif di bawah titiknya. Lo bayangin deh titik kritis itu kaya gini; misal lo mau naek wahana di tempat wisata tapi gak boleh, si om-om-nya bilang karena tinggi lo kurang dari 150cm. Nah si 150cm ini merupakan titik kritis untuk naek wahana itu. Andai saja lo lebih dari tinggi 150cm, lo bisa naek. Sayang sekali lo nggak! <br> Nah, sekarang gue punya pertidaksamaan</p>
+        <div class="row"><div class="col-xs-2">
+          $$ (x-3) < 0 $$
+        </div></div>
+        <p>Bisa lo tebak kan titik kritisnya apaan? Iya, 3 lah titik kritisnya. Kalo x-nya diatas 3, maka nilainya positif. Kalo dibawah 3 ya negatif. Karena disini dimintanya yang negatif maka nilai x yang memenuhi adalah </p>
+        <div class="row"><div class="col-xs-2">
+          $$ x < -3 $$
+        </div></div>
+        <p>Kalo mau make analogi di atas, Ini bisa lo bayangin sebagai wahana yang cuma buat bocah dibawah 150cm. Gampang kan?</p>
+        <p>Sekarang gimana kalo titik kritisnya dua? Ya gampang aja men. Tinggal lo tentuin aja masing-masing positif negatifnya dimana, terus lo proses. Langsung contoh aja yak. Misalnya gue punya </p>
+        <div class="row"><div class="col-xs-2">
+          $$ (x-3)(x-5) > 0$$
+        </div></div>
+        <p>Nah, dari yang (x-5) kan nilainya positif kalo nilai x-nya diatas 5 dan negatif kalo kurang dari lima. Dari yang (x-3), positif kalo lebih dari 3 dan negatif kalo kurang dari 3. Sekarang masalahnya, gimana nilai dari x sama dengan 3 sampe 5? Kalo dari yang (x-3) positif karena lebih dari tiga, dari yang (x-5) negatif karena kurang dari 5. yaudah, positif kali negatif. Jadi? Ya <u>negatif</u> dong. Jadi yang kita punya sekarang adalah
+          <ul>
+            <li>diatas 5 positif</li>
+            <li>dibawah 3 positif juga, karena negatif kali negatif kan</li>
+            <li>diantara 3 dan 5 negatif</li>
+          </ul></p>
+        <p>Lo liat pertidaksamaannya, yang diminta yang positif doang kan? Maka, hasilnya adalah? jeng jeng. <br>
+        Iya, bener banget men. Jawabannya itu</p>
+        <div class="row"><div class="col-xs-2">
+          $$ x < 3 \vee x > 5 $$
+        </div></div>
+        <p>Gampang kan? Nah sekarang gimana kalo Pertidaksamaannya gue bagi dengan (x+8)? Gimana kalo gue pangkatin? Gimana kalo gue gabungin dengan pertidaksamaan lain? Nah, kalo ini sih mendingan lo tonton videonya baik-baik. Selamat bermatimatik deh!</p>
+
+{% endblock %}

@@ -5,7 +5,7 @@
   :contents [{:title "Persamaan Kuadrat"
               :filename "cc2574x01"}]}
 
- {:kode "CC 234"
+ {:kode "CC 2584"
   :contents [{:title "Persamaan Garis Lurus"
               :filename "cc2584x01"}
              {:title "Fungsi Kuadrat"
@@ -13,7 +13,7 @@
  {:kode "CC 2419"
   :contents [{:title "Fungsi Kuadrat DP"
               :filename "cc2419x01"}]}
-              
+
   {:kode "CC 2416"
    :contents [{:title "Grafik DP"
                :filename "cc2416x01"}]}
@@ -24,4 +24,7 @@
 
   {:kode "CC 2575"
    :contents [{:title "Pertidaksamaan Dasar"
-               :filename "cc2575x01"}]}]
+               :filename "cc2575x01"}]}
+   {:kode "CC 2576"
+    :contents [{:title "Pertidaksamaan Dasar 2"
+                :filename "cc2576x01"}]}]
