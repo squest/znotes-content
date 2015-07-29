@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Pertidaksamaan Dasar</h3>
+  <p>Pertidaksamaan biasanya adalah bagian paling sulit nih. Khusus di sini, lo akan belajar cara-cara di kasus-kasus tertentu. Jarang nih Kak Sabda ngajarin cara-cara untuk kasus spesifik. Bagian pertidaksamaan ini akan dibagi menjadi empat bagian. Di bagian ini, lo akan belajar tentang konsep jenis bilangan, garis bilangan, sedikit proporsional logic dan beberapa notasi himpuna. Oke deh, langsung aja kita liat satu-satu.</p>
+  <h5>Himpunan bilangan</h5>
+  <p>Di garis bilangan kan ada buanyak banget bilangan tuh, bilangan-bilangan itu dikelompokan menjadi beberapa himpunan bilangan. Inilah beberapa himpunan bilangan</p>
+    <ul>
+      <li>Bilangan Asli dan cacah</li>
+      <p>Bilangan asli adalah himpunan bilangan bulat yang dimulai dari satu. Di Bahasa Inggris, bilangan asli disebut <em>Natural numbers</em>. Makanya sering dinotasikan dengan N.</p>
+        <div class="row"><div class="col-xs-2">
+          $$ N = \left \{ 1,2,3,... \right \} $$
+        </div></div>
+      <p>Himpunan bilangan cacah juga sama, cuma mulainya dari nol.</p>
+      <div class="row"><div class="col-xs-2">
+        $$ N = \left \{ 0,1,2,3,... \right \} $$
+      </div></div>
+        <li>Bilangan Bulat</li>
+        <p>Himpunan bilangan bulat adalah himpunan semua bilangan yang habis jika dibagi oleh faktornya. Mulai dari negatif tak hingga sampe positif tak hingga. Di Bahasa Inggris, ia disebut <em>Integers</em>, dinotasikan dengan Z</p>
+        <div class="row"><div class="col-xs-2">
+          $$ Z = \left \{ -∞,.....0,1,2,3,...,∞ \right \} $$
+        </div></div>
+        <li>Bilangan rasional dan irrasional</li>
+        <p>Bilangan rasional adalah bilangan yang bisa dinyatakan dalam pecahan. Sebaliknya, bilangan irrasional adalah bilangan yang gak bisa dalam pecahan. Bilangan rasional dinotasikan dengan Q, sedangakan bilangan irrasion dinotasikan dengan Q̄  .</p>
+        <div class="row"><div class="col-xs-2">
+          $$Q = \frac{a}{b}$$
+        </div></div>
+        <p>Biasanya, bilangan yang bisa dibentuk ke dalam pecahan itu bentuk desimalnya berulang. Nah kalo yang irrasional mah gak bisa. Salah satu contoh bilangan irrasional yang beken adalah π.</p>
+          <div class="row"><div class="col-xs-2">
+            $$π = 3.1415926.....$$
+          </div></div>
+        <p>Angka di belakang komanya gak berulang jadi gak bisa kita bentuk ke dalam pecahan.</p>
+        <li>Bilangan riil</li>
+        <p>Bilangan riil adalah bilangan apapun yang ada di garis bilangan. Dinotasikan dengan R.</p>
+        <br>
+        <p>Nah kalo semua himpunan bilangan ini kita urutin dari yang jumlah bilangannya paling sedikit hingga paling banyak, maka</p>
+        <div class="row"><div class="col-xs-2">
+          $$ N < Z < Q < R$$
+        </div></div>
+    </ul>
+  <h5>Garis bilangan</h5>
+    <p>Untuk dasar pertidaksamaan, ada beberapa hal yang perlu lo inget. Diantaranya: </p>
+    <div class="row"><div class="col-xs-2">
+      $$ a < b → a+k < b+k \\
+         a < b → a*k < b*k  \\
+         a < b → a^{n} < b^{n} \\
+         k> 0 \ ∧ \ n = bilangan \ genap \ positif$$
+    </div></div>
+    <p>Hal ini belom tentu berlaku untuk operasi pengurangan dan pembagian.</p>
+  <h5>Logika ∧ dan ∨</h5>
+    <ul>
+      <li>Logika ∧</li>
+      <p>Kalo lo diminta a ∧ b, maka lo harus memenuhi keduanya. Maksudnya lo harus punya a dan b secara bersamaan. Gak boleh salah satu doang</p>
+      <li>Logika ∨</li>
+      <p>Kalo a ∨ b, sebagian doang yang lo penuhi juga gak apa apa. Misal a doang, diterima. Mau b doang, diterima. Keduanya a dan b juga diterima. Yang gak diterima kalo gak ada keduanya aja.</p>
+    </ul>
+  <h5>Operasi himpunan</h5>
+  <p>Ada beberapa notasi himpunan yang perlu lo inget, misalnya lo dikasih himpunan A dan himpunan B yang masing-masing:</p>
+  <div class="row"><div class="col-xs-2">
+    $$ A = \left \{ A,B,C,D \right \} \qquad B = \left \{ A,B,X,Y \right \} \\
+       A ∨ B  = \left \{ A,B,C,D,X,Y \right \}  \\
+       A ∧ B  = \left \{ A,B \right \} \\
+       A - B  = \left \{ C,D \right \} $$
+
+  </div></div>
+  <p>Bukan cuma itu, beberapa operasi di himpunan ini juga akan diimplemetasikan di bab ini. Kayanya udah cukup nih pendahuluannya di note ini. Langsung aja lo cek videonya.</p>
+{% endblock %}

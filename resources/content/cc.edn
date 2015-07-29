@@ -13,12 +13,15 @@
  {:kode "CC 2419"
   :contents [{:title "Fungsi Kuadrat DP"
               :filename "cc2419x01"}]}
-
-
+              
   {:kode "CC 2416"
    :contents [{:title "Grafik DP"
                :filename "cc2416x01"}]}
 
   {:kode "CC 2050"
    :contents [{:title "Pemantapan Konsep Grafik"
-               :filename "cc2050x01"}]}]
+               :filename "cc2050x01"}]}
+
+  {:kode "CC 2575"
+   :contents [{:title "Pertidaksamaan Dasar"
+               :filename "cc2575x01"}]}]
