@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Fungsi</h3>
+  <p>Kali ini lo akan belajar konsep fungsi. "Eh, gue udah belajar fungsi kuadrat, kenapa harus belajar fungsi lagi?" Nah, ini mah beda me. Bedanya, kalo di fungsi kuadrat kan lo cuma nyari-nyari plot buat grafiknya. Kalo di sini, lo akan belajar mulai dari konsep daerah asal dan hasil(<em>Domain and Range</em>), dan juga lo akan belajar tentang apaan sih konsep fungsi itu sendiri. Nah, bagian fungsi ini akan dibagi jadi dua men. Jadi, kali ini kaya cuma pendahuluannya aja. </p>
+  <h4>Fungsi dan relasi</h4>
+  <p>Fungsi dan relasi itu masing-masing punya <em>domain</em> dan <em>range</em>. Bedanya kalo fungsi, setiap domain harus memiliki satu hasil. Kalo relasi mah bebas. Sesuai namanya, relasi cuma memetakan hubungan antara daerah asal dan daerah hasil. Misalnya gue punya domain dan range</p>
+  <div class="row"><div class="col-xs-2">
+          $$ D \ = \ \begin{pmatrix}
+      a\\
+      b\\
+      c\\
+      d
+      \end{pmatrix} \qquad R \ = \ \begin{pmatrix}
+      1\\
+      2\\
+      3
+      \end{pmatrix} $$
+  </div></div>
+  <p>Nah, yang namanya relasi mah bebas. Nggak ada aturannya. Mau lo jawab</p>
+  <div class="row"><div class="col-xs-2">
+    $$ (a,3), \ (a,2), \ (c,2), \ (b, 1) $$
+  </div></div>
+  <p>atau</p>
+  <div class="row"><div class="col-xs-2">
+    $$ (a,1), \ (a,2), \ (b,2), \ (c, 1) $$
+  </div></div>
+  <p>Juga boleh-boleh aja. Terserah deh, asal ada di daerah asal dan hasil. Mau hubungannya kaya apapun juga sah-sah saja.</p>
+  <p>Kalo fungsi lain cerita. Fungsi mah punya syarat. Syaratnya adalah <strong>setiap</strong> hal di daerah asal harus punya <strong>satu</strong> hasil di daerah hasil. Nah, yang kaya gini</p>
+  <div class="row"><div class="col-xs-2">
+    $$ (a,3), \ (a,1), \ (c,2), \ (d, 3) $$
+  </div></div>
+  <p>Gak bisa disebut fungsi, karena menyalahi syarat. Syaratnya kan setip hal dari daerah asal harus punya <strong>satu</strong> hasil. Nah, ini si a punya dua hasil. Jadi ini bukan fungsi, kalo ini</p>
+  <div class="row"><div class="col-xs-2">
+    $$ (a,3), \ (b,1), \ (c,2), \ (d, 2) $$
+  </div></div>
+  <p>Itu memenuhi syarat, jadi bisa disebut fungsi. "Eh, tapi kan itu nilai 2 dari daerah hasil di-keme sama dua hal dari domain". Gak apa apa, yang penting hal <strong>dari</strong> daerah asal yang harus punya satu hasil.</p>
+  <h4>Fungsi dengan persamaan atau pertidaksamaan</h4>
+  <p>Sekarang kalo gue punya fungsi</p>
+  <div class="row"><div class="id">
+    $$ y \ = \ x \ + \ 2 $$
+  </div></div>
+  <p>Domain dan range dari fungsi ini apa coba? Gue jawab aja ya</p>
+  <div class="row"><div class="col-xs-2">
+    $$ \left \{ x \ | \ x \ \epsilon \ \mathbb{R} \right \} $$
+  </div></div>
+  <p>Yoi, semua bilanga di garis bilangan adalah domain dan range-nya. Kenapa begini? Karena lo bisa masukin nilai berapa aja ke x itu. Dari -∞ sampe -∞ pasti ada hasilnya. Sekarang kalo fungsinya gini, gimana?</p>
+  <div class="row"><div class="col-xs-2">
+    $$ y \ = \ \sqrt{x-5} $$
+  </div></div>
+  <p>Sekarang apa domainnya? Semua bilangan di garis bilangan juga? Kagak men, di sini beda, ada syaratnya. Coba, apa syarat sebuah akar? Iya, syarat akar adalah semua hal di dalam akar harus positif supaya akanya gak imajiner. Sekarang kan</p>
+  <div class="row"><div class="col-xs-2">
+    $$ y \ = \ \sqrt{x-5} \\
+    . \\
+    x \ - \ 5 \ ≧ \ 0 \\
+    x \ ≧ \ 5 \\  $$
+  </div></div>
+  <p>Lo liat, daerah asal yang memenuhi syarat sekarang cuma nilai yang lebih dari lima. Kalo daerah hasilnya apa? Oke, karena fungsinya adalah fungsi akar jadi gak mungkin nilai hasilnya negatif. Kalo nol mungkin gak? ya mungkin aja kalo x-nya sama dengan 5. 5 memenuhi domain kan, kalo gitu akar dari 5-5 berapa? ya nol. Jadi sekarang daerah hasilnya adalah semua bilangan positif.</p>
+  <div class="row"><div class="col-xs-2">
+    $$ D \ = \ \left \{ \ x \ | x \ ≧ \ 5, \ x \ \epsilon \ \mathbb{R} \right \}, \qquad R \ = \ \left \{ \ x \ | x \ ≧ \ 0, \ x \ \epsilon \ \mathbb{R} \right \} $$
+  </div></div>
+  <p>Itu baru fungsi yang cuma akar. Gimana kalo fungsi-nya dibagi, atau fungsi logaritma, atau fungsi trigonometri, dll. Mendingan lo langsung aja deh cek videonya untuk lengkapnya. Ciao</p>
+{% endblock %}
