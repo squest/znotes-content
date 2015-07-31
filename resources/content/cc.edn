@@ -36,4 +36,7 @@
                 :filename "cc2578x01"}]}
    {:kode "CC 2571"
     :contents [{:title "Fungsi"
-                :filename "cc2571x01"}]}]
+                :filename "cc2571x01"}]}
+   {:kode "CC 2572"
+    :contents [{:title "Komposisi dan invers fungsi"
+                :filename "cc2572x01"}]}]

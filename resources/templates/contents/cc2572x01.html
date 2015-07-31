@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Komposisi dan Invers Fungsi</h3>
+  <p>Nah ini adalah lanjutan dari note sebelumnya. Seperti biasa, kalo lo belom mepelajari bagian pertama-nya, mendingan lo baca dan tonton itu dulu.
+  Di sini lo akan belajar tentang fungsi komposisi dan invers fungsi. Kaya begimana? langsung aja ya kita bahas. </p>
+  <h4>Fungsi komposisi</h4>
+  <p>Sederhananya, fungsi komposisi adalah cara untuk bikin satu fungsi dari beberapa fungsi lainnya. Analoginya tuh misalnya lo punya daging mentah terus lo mau bikin baso. Lo perlu ngolah daging mentah lo menggunakan mesin F untuk bikin adonan daging mateng. Dan dari adonan mateng, lo perlu olah lagi menggunakan mesin G untuk bikin baso. Jadi, <br> <div class="row"><div class="col-xs-2">
+    $$ Mesin \ G(Mesin \ F(daging \ mentah)) \ = \\
+    . \\
+    \left ( daging \ mentah \right ) \  \xrightarrow[]{mesin F} \ \left ( adonan \ daging \right ) \ \xrightarrow[]{mesin G} \ \left ( baso \ daging \right ) $$
+  </div></div> <br>Si Mesin G (Mesin F(daging mentah)) lah yang disebut fungsi komposisi, dengan mesin F dan mesin G sebagai fungsi fungsi fungsi lain yang merupakan komposisi (pembangun) si fungsi komposisi untuk bikin baso tadi. Gampang kan? Ada hal yang perlu lo perhatiin. Disitu kan gue tentuin daging sebagai bahan awalnya(domain-nya). Itu tuh gak harus daging. Domainnya bisa apa aja. Mau isinya kambing, manusia, atau apapun deh. Bodo amat, pokoknya kalo gue masukin x mentah, pasti hasil fungsinya adalah baso x.  </p>
+  <p>Sekarang kalo gue punya fungsi</p>
+  <div class="row"><div class="col-xs-2">
+    $$ f(x) \ = \ x \ + \ 5 \\
+     g(x) \ = \ 2x \ - 2  $$
+  </div></div>
+  <p>terus gue tanya</p>
+  <div class="row"><div class="col-xs-2">
+    $$ berapa \quad g(f(4)) \ ? $$
+  </div></div>
+  <p>Yaudah, gampang aja. Lo proses aja dulu kalo inputnya tetep x jadi</p>
+  <div class="row"><div class="col-xs-2">
+    $$ f(x) \ = \ x \ + \ 5 \\
+     g(x) \ = \ 2x \ - \ 2 \\
+     g(f(x)) \ = \ 2 (x+5) \ - 2 \\
+     g(f(x)) \ = \ 2x \ + \ 8  $$
+  </div></div>
+  <p>Baru deh lo ganti x dengan 2</p>
+  <div class="row"><div class="col-xs-2">
+    $$ g(f(x)) \ = 2x \ + \ 8 \\
+    g(f(2)) \ = 2(2) \ + \ 8 \\
+    g(f(2)) \ = \ 12 $$
+  </div></div>
+  <p>"Ah, gampang banget fungsi komposisi. Gak menarik". Eits, jangan takabur dulu <em>ya akhi wal ukhti fillah</em>. Yang menarik-menarik banyak buangeet kok di videonya Kak Sabda.</p>
+  <h4>Invers Fungsi</h4>
+  <p>Kalo invers fungsi sih gampang aja. Kalo lo make analogi di atas, intinya invers fungsi adalah cara lo mengubah si baso kembali jadi daging mentah. Tapi sekarang kita pake mesin yang berbeda, sebut aja mesin F' dan mesin G'. Cara kerja mesin F' dan G' ini bener-bener kebalikannya cara kerja mesin F dan G. Misalnya, si mesin F bekerja dengan cara memotong-motong daging mentah menjadi adonan daging. Nah kalo mesin F' kerjanya nyatu-nyatu-in adonan daging tersebut menjadi daging mentah yang utuh kembali. Bisa gue tulis kaya gini</p>
+  <div class="row"><div class="col-xs-2">
+    $$ Mesin \ F'(Mesin \ G'(daging \ mentah)) \ = \\
+    . \\
+    \left ( daging \ mentah \right ) \  \xleftarrow[]{mesin F'} \ \left ( adonan \ daging \right ) \ \xleftarrow[]{mesin G'} \ \left ( baso \ daging \right ) $$
+  </div></div>
+  <p>Simple aja kan, tinggal dibalik aja semuannya. Lo liat juga, judul fungsi komposisinya juga berubah. Yang awalnya
+  Mesin G (Mesin F(daging mentah)), sekarang jadi Mesin F' (Mesin G'(daging mentah))</p>
+  <p>Sekarang gue tanya. Kenapa mesin G' yang di dalem kurung padahal di fungsi komposisi awalnya, mesin F lah yang di dalem kurung? Kalo emang invers adalah kebalikan suatu fungsi, kenapa bukan mesin F'? Ah, gak bakal gue jawab ah. Lo tonton aja videonya Kak Sabda deh. Di situ konsepnya bakal digali secara mendalam dan banyak soal-soal latihannya. Oke, bye! </p>
+{% endblock %}
