@@ -39,4 +39,7 @@
                 :filename "cc2571x01"}]}
    {:kode "CC 2572"
     :contents [{:title "Komposisi dan invers fungsi"
-                :filename "cc2572x01"}]}]
+                :filename "cc2572x01"}]}
+   {:kode "CC 2415"
+    :contents [{:title "Konsep Bilangan Riil"
+                :filename "cc2415x01"}]}]
