@@ -42,4 +42,7 @@
                 :filename "cc2572x01"}]}
    {:kode "CC 2415"
     :contents [{:title "Konsep Bilangan Riil"
-                :filename "cc2415x01"}]}]
+                :filename "cc2415x01"}]}
+   {:kode "CC 2570"
+    :contents [{:title "Eksponen"
+                :filename "cc2570x01"}]}]
