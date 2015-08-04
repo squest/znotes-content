@@ -53,4 +53,6 @@
                  :filename "cc2573x02"}]}
    {:kode "CC 2568"
     :contents [{:title "Barisan dan Deret Aritmatika"
-                :filename "cc2568x01"}]}]
+                :filename "cc2568x01"}
+                {:title "Barisan dan Deret Aritmatika"
+                            :filename "cc2568x02"}]}]

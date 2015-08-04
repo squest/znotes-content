@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Jumlah Deret Aritmatika</h3>
+  <p>Kalo di note sebelumnya kita bahas cara nyari suku ke-n dari suatu barisan dan deret aritmatik, di sini kita bakal bahas cara nyari jumlah(S<sub>n</sub>) dari deret aritmatika. Kalo ditulis secara matematikanya, Sn adalah</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    S_{n} \ = \ U_{1} + U_{2} + U_{3} +.... \ + U_{n} $$
+  </div></div>
+  <p>Jadi kalo gue punya deret gini, berapa jumlahnya?</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    2+4+6+8+10 $$
+  </div></div>
+  <p>Yaudeh sih, tinggal tambahin doang, nenek-nenek <em>standing</em> juga tau jumlahnya 30. Tapi cara begini mah primitif men, ada yang keren. Lagian kalo di atas kan kita tau semua sukunya, kalo gak tau sebagian gimana? Mana bisa pake cara nenek-nenek barusan.</p><br>
+  <p>Ada cara lain yang bakal kepake kalo situasinya kaya gitu. Caranya gimana? Kalo ada Deret kaya gini, terus gue mau cari tau jumlahnya berapa</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    S_{n} \ = \ 3+5+7+9+11 $$
+  </div></div>
+  <p>Sebenernya kalo deretnya gitu bisa aja sih pake cara yang primitif, tapi karena kita fokusnya pengen tau cara lain sekarang jadi gak apa-apa. Deret di atas, secara postulat satu bisa aja kan gue tulis jadi</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    S_{n} \ = \ 11+9+7+5+3 $$
+  </div></div>
+  <p>Setalah itu deret pertama gue tambahin secara vertikal dengan deret kedua (3+11, 5+9, 7+7, 9+5, 11+3) jadi</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    2S_{n} \ = \ 14+14+14+14+14 \\
+    S_{n} \ = \frac{5*14}{2} \\ $$
+  </div></div>
+  <p>Dapet deh jawabannya 35. Perlu lo inget cara nyari 14 gimana. 14 itu dateng bisa dari suku pertama ditambah suku terakhir, bisa juga pake suku kedua ditambah suku kedua paling akhir, dst. Bentuk umum cara ini kalo ditulis adalah</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    S_{n} \ = \frac{b \ * \ (U_{1}+U_{n})}{2} $$
+  </div></div>
+  <p>Dengan S<sub>n</sub> adalah suku ke-n, b adalah selisih, U<sub>1</sub> adalah suku pertama dan U<sub>n</sub> adalah suku terakhir. Kalo bentuk umum yang biasa ditulis dibuku-buku datengnya mirip mirip dengan bentuk umum kita ini, mulai dari</p>
+  <div class="row"><div class="col-xs-2">$$
+  S_{n} \ = \ a + (a+b) + (a+2b) +.... \ + (a+(n-1)b) \\
+  S_{n} \ = \ (a+(n-1)b) \ + \ (a+(n-2)b) \ + .... \ + a \\ $$
+    </div></div>
+  <p>Kedua persamaan ditambah secara vertikal jadi</p>
+  <div class="row"><div class="col-xs-2">
+    $$  S_{n} \ = \ \frac{n \ * \ (a+(a+(n-1)b))}{2} \\
+      S_{n} \ = \ \frac{n}{2} \ * \ (2a+(n-1)b)) $$
+    </div></div>
+    <br>
+  <p>Ada cara lain nggak? Ada dong men. coba aja lo cek videonya sekarang. Jangan diapalin doang, inget dan pahami datengnya dari mana. Di video Kak Sabda dijelasin secara detil! </p>
+{% endblock %}
