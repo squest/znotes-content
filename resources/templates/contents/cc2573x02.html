@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Sifat-Sifat Logaritma</h3>
+  <p>Note ini cuma berisi rangkuman sifat-sifat atau rumus logaritma SMA aja. Untuk definisi dan ketentuan awalnya ada di note sebelumnya. Langsung aja ya kita bahas.</p>
+  <h4>Sifat pertama</h4>
+  <p>Misalnya gue punya dua persamaan</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    a^{m} \ = \ b \\
+    a^{n} \ = \ c \\ $$
+  </div></div>
+  <p>Dari eksponen kita tau</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    a^{m}*a^{n} \ = \ b*c \ = \ a^{m+n} $$
+  </div></div>
+  <p>Dari definisi logaritma yang</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+  □^{\triangle} \ = \ a \quad ⇒ \quad \log_□ a \ = \ \triangle $$
+  </div></div>
+  <p>Bisa gue otak-atik sifat eksponen diatas menjadi</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    a^{m+n} \ = \ b*c \ ⇒ \ \log_a b*c \ = \ m+n  $$
+  </div></div>
+ <p>mengingat</p>
+ <div class="row"><div class="col-xs-2">
+   $$
+   a^{m} \ = \ b \ ⇒ \ \log_a b \ = \ m \\
+   a^{n} \ = \ c \ ⇒ \ \log_a c \ = \ n \\ $$
+ </div></div>
+ <p>Maka</p>
+ <div class="row"><div class="col-xs-2">
+   $$
+   \log_a b*c \ = \ m+n \ = \ \log_a b \ + \log_a c  $$
+ </div></div>
+ <p>Dapet deh sifat pertama</p>
+ <div class="row"><div class="col-xs-2">
+   $$
+  \log_a b \ + \log_a c \ = \ \log_a b*c  $$
+ </div></div>
+ <h4>Sifat kedua</h4>
+ <p>Kalo sifat pertama kaya begitu, lo bisa nebak dong kalo gue punya persamaan kaya gini, hasilnya apa?</p>
+ <div class="row"><div class="col-xs-2">
+   $$
+   \log_a b \ - \ \log_a c $$
+ </div></div>
+ <p>Iya bener, hasilnya</p>
+ <div class="row"><div class="col-xs-2">
+   $$
+   \log_a b \ - \ \log_a c \ = \ \log_a b/c $$
+ </div></div>
+ <p>Kalo di eksponen pangkatnya ditambah, kalo di logaritma dikali. kalo di eksponen dikurang, di logaritma dibagi. Jadi, bisa disebut kalo logaritma adalah inversnya eksponen. Kalo lo bisa menguasai eksponen, lo pasti juga bisa logaritma. Gak usah takut sama lambang <em>log</em>-nya.</p>
+ <h4>Sifat lainnya</h4>
+ <ul>
+   <li><div class="row"><div class="col-xs-2">
+     $$ \log_a a^{b} \ = \ b $$
+   </div></div></li>
+   <li><div class="row"><div class="col-xs-2">
+     $$ a^{\log_a b} \ = \ b $$
+   </div></div></li>
+   <li><div class="row"><div class="col-xs-2">
+     $$ \log_a b \ = \ \frac{\log_n b}{\log_n a} \\
+     0< n < 1 \quad \vee \quad n ≧ 1 $$
+   </div></div></li>
+   <li><div class="row"><div class="col-xs-2">
+     $$ \log_a b \ = \ \frac{1}{\log_b a}$$
+   </div></div></li>
+   <li><div class="row"><div class="col-xs-2">
+     $$
+     \log_a^{c} b^{d} \ = \ \frac{d}{c} * \log_a b $$
+   </div></div></li>
+ </ul>
+ <p>Seperti biasa, gue ingatkan. Jangan pernah lo apalin doang sifat sifat diatas. Jadi bego lo ntar kalo ngapalin doang. Penjelasan detilnya ada kok di videonya Kak Sabda. Mendingan langsung aja <em>check it out</em>, bro!</p>
+{% endblock %}

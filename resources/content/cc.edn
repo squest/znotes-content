@@ -48,4 +48,6 @@
                 :filename "cc2570x01"}]}
    {:kode "CC 2573"
     :contents [{:title "Logaritma"
-                :filename "cc2573x01"}]}]
+                :filename "cc2573x01"}
+                {:title "Sifat-Sifat Logaritma"
+                 :filename "cc2573x02"}]}]
