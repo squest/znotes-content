@@ -50,4 +50,7 @@
     :contents [{:title "Logaritma"
                 :filename "cc2573x01"}
                 {:title "Sifat-Sifat Logaritma"
-                 :filename "cc2573x02"}]}]
+                 :filename "cc2573x02"}]}
+   {:kode "CC 2568"
+    :contents [{:title "Barisan dan Deret Aritmatika"
+                :filename "cc2568x01"}]}]

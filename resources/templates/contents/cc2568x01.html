@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Barisan dan Deret Aritmatika</h3>
+  <p>Halo guys, kali ini kita akan bahas barisan dan deret aritmatika. Pertama-tama, lo tau gak sih apa bedanya barisan dan deret? Intinya kalo barisan adalah urutan angka dengan selisih yang sama antar satu suku dengan suku lain. Sedangkan Deret adalah urutan angka yang sukunya dijumlahkan dengan suku-suku lainnya.</p>
+  <p>Barisan:</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    2,4,6,8,10... $$
+  </div></div>
+  <p>Deret:</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    2+4+6+8+10... $$
+  </div></div>
+  <h4>Menentukan suku ke-n</h4>
+  <p>Lo liat deh, di atas kan cuma ada lima suku. Kalo gue mau tau suku ke-69 (he he) gimana? Lo liat deh barisan di atas, di sana jelas kan selisihnya sama di setiap suku. Dari suku pertama ke suku kedua, selisihnya 2. Dari suku kedua ke suku ketiga, selisihnya 2 juga, dan seterusnya. Sekarang, dari suku pertama ke suku ketiga, selisihnya berapa? ya 4 lah ya, tapi si 4 ini berarti apa? Perhatiin baik-baik, Kalo dari suku pertama ke suku kedua selisihnya 2, kalo dari suku pertama ke suku ketiga berarti suku pertama ditambah selisih(jadi suku kedua), terus ditambah lagi selisihnya baru jadi suku ketiga. Ada dua selisih diantara mereka. Kalo dari suku pertama ke suku kelima ada berapa selisih? ada empat selisih. Si selisihnya itu sendiri bernilai 2. Yaudah deh, sekarang tinggal kaliin Jumlah selisih dan nilai selisih, terus lo tambah suku pertama, dapet deh suku kelima((4 * 2) + 2 = 10). Liat deh, kalo suku kedua ada satu selisih, suku ketiga ada dua selisih, suku kelima ada empat selisih. Kalo suku ke-69 ada berapa selisih? Yups! ada 68 selisih. Dengan selisihnya sendiri itu bernilai 2 dan suku pertamanya itu dua, jadi suku ke-69 adalah</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    U_{69} \ = \ (68*2) \ + \ 2 \ = \ 138 $$
+  </div></div>
+  <p>Kalo dibikin jadi bentuk umum</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    a,(a+b),(a+2b),(a+3b).. \\
+    U_{n} \ = \ a \ + \ (n-1) b $$
+  </div></div>
+  <p>Dengan a adalah suku pertama, b adalah selisih, dan U<sub>n</sub> adalah suku ke-n.</p>
+  <p>Sayangnya, kalo gini kita perlu suku pertama <em>tok'</em> untuk cari suku ke-n. Kalo kita gak tau gimana? Misalnya cuma tau selisih dan suku ke tujuh. Nah untuk ini, Rumus U<sub>n</sub> yang kita turunin di atas kurang enak kalo dipake begini aja. Perlu di otak atik dulu jadi</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    U_{n} \ = \ a \ + \ (n-1) b \ = \ a \ + \ bn \ - \ b \\
+    U_{n} \ = \ bn \ + \ c \\
+    dimana \quad c \ = \ a \ - \ b  $$
+  </div></div>
+  <p>Naaah, kalo gini baru rada lebih enak. Misalnya gue gak tau suku pertama dari barisan di bawah ini. Tapi gue tau bahwa 25 adalah suku kedelapan dan selisihnya tiga. sekarang berapa nilai suku ke 21?</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    ...22,25,28,... $$
+  </div></div>
+  <p>Lo masukin dulu nilai selisih dan nilai si suku itu ke bentuk umum baru kita, terus kita cari nilai c-nya</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    U_{n} \ = \ bn \ + \ c \\
+    U_{8} \ = \ 25 \\
+    U_{8} \ = \ 3(8) \ + \ c \\
+    ⇒ c \ = \ 1 $$
+  </div></div>
+  <p>Udah dapet kan c-nya, kalo gitu udah deh kita dapet bentuk umum untuk barisan yang diminta. Sekarang bisa kita jawab pertanyaan diatas.</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    U_{n} \ = \ bn \ + \ c \\
+    U_{n} \ = \ 3n \ + \ 1 \\
+    U_{21} \ = \ 3(21) \ + \ 1 \\
+    U_{21} \ = \ 62 $$
+  </div></div>
+  <p>Lebih enak kan? Sebenernya bisa juga sih make bentuk umum yang pertama. Tapi kalo make ini lebih gampang aja, di videonya Kak Sabda juga dijelasin maksudnya lebih gampang kaya gimana. Mendingan lo cek aja sekarang langsung videonya. Untuk Jumlah deret geometri, akan dibahas di note selanjutnya.</p>
+{% endblock %}
