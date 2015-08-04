@@ -45,4 +45,7 @@
                 :filename "cc2415x01"}]}
    {:kode "CC 2570"
     :contents [{:title "Eksponen"
-                :filename "cc2570x01"}]}]
+                :filename "cc2570x01"}]}
+   {:kode "CC 2573"
+    :contents [{:title "Logaritma"
+                :filename "cc2573x01"}]}]

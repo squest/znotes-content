@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Logaritma</h3>
+  <p>Dalam pelajaran matematika di SMA, logaritma biasanya menjadi hal yang ditakuti sama murid-murid. Entah karena masing asing atau gimana. Sebenernya sih logaritma itu simple aja, mirip dengan eksponen. Kalo eksponen itu dalah cara untuk mencari hasil pangkat dari suatu bilangan, seperti</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    a^{b} = c $$
+  </div></div>
+  <p>Nah kalo logaritma, adalah cara untuk mencari berapa nilai <strong>pangkat</strong>nya. Jadi misalnya,</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    \log_a c \ = \ b $$
+  </div></div>
+  <p>Contohnya, lo mau cari tau berapa sih nilai dari 2 yang dipangkatin 3. Lo tinggal pake eksponen jadi</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    2^{3} = 8 $$
+  </div></div>
+  <p>Sekarang, misalnya lo gak tau kalo 2 dipangkatin 3 hasilnya 8. Tapi lo mau tau, 8 itu adalah 2 yang dipangkatin berapa. Ya, caranya adalah pake logaritma. Jadi</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    \log_2 8 \ = \ 3 $$
+  </div></div>
+  <p>Sekarang gue tanya, berapa</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    \log_2 4 \ = \ ? $$
+  </div></div>
+  <p>Yup, jawabannya 2. Gampang kan? Ga usah kaget kalo lo ketemu <em>log-log</em>-an nanti di soal ujian. Intinya gampang kok mirip eksponen.</p>
+  <br>
+  <p>Kembali ke definisi logaritma</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    \log_a c \ = \ b $$
+  </div></div>
+  <p>Di sini, ada beberapa ketentuan yang berlaku. diantanyara</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    0 \ < \ a \ < \ 1 \quad \vee \quad a \ > \ 1 \\
+    c \ ≧ \ 0 $$
+  </div></div>
+  <p>Dan juga</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    \log_1 x \ = \ 1 \\
+    \log_x 1 \ = \ 0 $$
+  </div></div>
+  <p>Untuk sifat-sifat lainnya, akan di bahas di note selanjutnya.</p>
+{% endblock %}
