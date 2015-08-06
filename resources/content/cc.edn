@@ -55,4 +55,7 @@
     :contents [{:title "Barisan dan Deret Aritmatika"
                 :filename "cc2568x01"}
                 {:title "Barisan dan Deret Aritmatika"
-                            :filename "cc2568x02"}]}]
+                            :filename "cc2568x02"}]}
+   {:kode "CC 2929"
+    :contents [{:title "Barisan dan Deret Geometri"
+                            :filename "cc2929x01"}]}]

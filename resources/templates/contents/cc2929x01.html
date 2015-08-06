@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Barisan dan Deret Geometri</h3>
+  <p>Barisan dan geometri mirip dengan barder aritmatika, kalo barder aritmatika adalah urutan angka-angka yang selisihnya konstan untuk suatu suku dan suku berikutnya, barder geometri adalah urutang angka yang rasionya sama suku-suku tersebut. Apa maksudnya rasio? Rasio adalah perbandingan antar dua suku yang bersebelahan. Misalnya, rasio suku pertama dan suku kedua sama dengan rasio suku kedua dan suku ketiga. Contoh, gue punya dua barisan</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    3,6,12,24,48... \\
+    9,3,1,\frac{1}{3},\frac{1}{9},..$$
+  </div></div>
+  <p>Di kedua barisan tersebut, rasionya sama tiap suku-suku yang bersebelahan. Kalo di barisan satu, rasionya dua. Kalo di barisan dua, rasionya sepertiga. Lo liat barisan satu; rasio antara suku pertamanya dan suku keduanya adalah dua. begitu juga rasio antara suku kedua dan suku ketiga. Itu yang dimaksud dengan rasionya sama tiap suku-suku yang bersebelahan. Jadi, kalo gue tulis secara umum</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    ⇒ a, (a*r), (a*r*r), (a*r*r*r),.. \\
+    ⇒ a, ar, ar^{2}, ar{3},... \\ $$
+  </div></div>
+  <p>Kalo mau nyari suku ke-n gimana? Mirip juga sama sama barder aritmatika, kalo di barder aritmatika pembeda antar dua suku bersebelah adalah selisih. Kalo di barder geometri pembedanya adalah rasio, maka suku ke-n untuk barder geometri adalah</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    U_{n} \ = \ a \ * \ r^{n \ - \ 1} $$
+  </div></div>
+  <p>Kalo nyari jumlah deret geoetri gimana? Mirip juga nggak sama deret aritmatika? Ya, kira-kira mirip lah. Dari bentuk umum deret geometri</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    S_{n} \ = \  a+ar+ar^{2}+ar{3},...,ar^{n-2},ar^{n-1} \\  $$
+  </div></div>
+  <p>Secara postulat #2, boleh dong si S<sub>n</sub> dikali <em>r</em>, asal yang di kanan dikali <em>r</em> juga. Jadi</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    r * S_{n} \ = \  ar+ar^{2}+ar{3},...,ar^{n-1},ar^{n} \\  $$
+  </div></div>
+  <p>Lalu kurangin aja deh kedua persamaan tersebut</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    S_{n} \ - \ r*S_{n} \ = \  a+ar^{n} \\
+    S_{n} \ (1 \ - \ r) \ = \ a \ (1 \ + \ r^{n}) \\
+    S_{n} \ = \ \frac{a \ (1 \ + \ r^{n})}{(1 \ - \ r)} $$
+  </div></div>
+  <p>Dapet deh S<sub>n</sub>, segini dulu aja deh. By the way, jangan lo apalin ya kalo gak ngerti ada kok penjelasannnya di zenius.net. </p>
+{% endblock %}
