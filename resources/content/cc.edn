@@ -61,4 +61,7 @@
                             :filename "cc2929x01"}]}
    {:kode "CC 2928"
     :contents [{:title "Barisan dan Deret Geometri Tak Hingga"
-                            :filename "cc2928x01"}]}]
+                            :filename "cc2928x01"}]}
+    {:kode "CC 2580"
+     :contents [{:title "Trigonometri eps 1"
+                            :filename "cc2580x01"}]}]

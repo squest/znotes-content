@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Trigonometri</h3>
+<p>Trigonometri biasanya adalah salah satu bab mata pelajaran matematika yang paling ditakuti oleh anak SMA, entah karena asing dengan fungsi trigonometri (sin, cos, tan, dll) atau karena banyak rumusnya. Jangan sampe karena takut, lo jadi males belajar trigonometri. Kalo gitu bahaya men, soalnya buanyaaak banget disiplin ilmu yang pake trigonometri. Mulai dari astronomi, fisika, biologi, semua jurusan teknik, sampe teori musik pun pake trigonometri. Jadi, gak usah takut, setelah belajar trigonometri di sini lo bakal familiar dengan fungsi-fungsi trigonometri dan juga lo bakal bisa nurunin rumus tanpa banyak ngapalin. Langsung aja ya kita bahas satu-satu.</p>
+
+<h4>Definisi dan identitas trigonometri</h4>
+<img src="http://s4.postimg.org/q7oub42wt/phytagorean_shits.png" alt="Segitiga Phytagoras">
+<br>
+<br>
+<p>Sin, cos, tan, dan lain-lain adalah fungsi yang menggunakan sudut untuk mencari relasi antara satu sisi dan sisi yang lain di suatu segita siku-siku. Jadi dalam segitiga di atas, lo bisa make si θ atau α ke dalam fungsi-fungsi trigonometri untuk cari tau hubungan-hubungan antara x, y, dan r. Definisi dari fungsi-fungsi di atas adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  Sin \ θ \ = \ \frac{Sisi \ seberang \ sudut \ θ}{Sisi \ miring} \ = \ \frac{y}{r} \\
+  Cos \ θ \ = \ \frac{Sisi \ di \ samping \ sudut \ \theta }{Sisi \ miring} \ = \ \frac{x}{r} \\
+  Tan \ θ \ = \ \frac{Sisi \ seberang \ sudut \ θ} {Sisi \ di \ samping \ sudut \ \theta } \ = \ \frac{y}{x} \ = \ \frac{Sin \ θ}{Cos \ θ}
+  $$
+</div></div>
+<p>Sedangkan <em>secan, cosecan dan cotangent</em> adalah kebalikan mereka</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  Csc \ θ \ = \ \frac{Sisi \ miring}{Sisi \ seberang \ sudut \ θ} \ = \ \frac{y}{r} \ = \ \frac{1}{Sin \ θ} \\
+  Sec \ θ \ = \ \frac{Sisi \ miring}{Sisi \ di \ samping \ sudut \ \theta } \ = \ \frac{x}{r} \ = \ \frac{1}{Cos \ θ} \\
+  Ctg \ θ \ = \ \frac{Sisi \ di \ samping \ sudut \ \theta }{Sisi \ seberang \ sudut \ θ}  \ = \ \frac{y}{x} \ = \ \frac{Cos \ θ}{Sin \ θ} \ = \ \frac{Csc \ θ}{Sec \ θ}
+  $$
+</div></div>
+<p>Sekarang coba deh lo petain fungsi-fungsi di atas kalo make sudut α supaya gampang ngingetnya.</p>
+<br>
+<p>Dulu kan waktu SD kita udah belajar teorema Phytagoras. Sekarang sesuai <em>Principle of Identity</em> atau postulat keduanya Kak Sabda, kita bagi kedua sisi persamaan teorema Phytagoras dengan r<sup>2</sup>, supaya berubah jadi</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  (\frac{1}{r^{2}})(x^{2} \ + \ y^{2}) \ = \ r^{2} (\frac{1}{r^{2}}) \\
+  (\frac{x}{r})^{2} \ + \ (\frac{y}{r})^{2} \ = \ 1
+  $$
+</div></div>
+<p>Sekarang, lo liat definisi fungsi kita di atas. Dengan menggunakan postulat ketiga, maka teorema Phytagoras berubah jadi</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  Sin^{2} \ θ \ + \ Cos^{2} θ \ = \ 1
+  $$
+</div></div>
+<p>Oke, gak bener bener berubah sih. Mereka adalah beridentitas. Identitas adalah kesamaan antara fungsi-fungsi yang didefiniskan secara berbeda.</p>
+<p>Menarik bukan? Di bab ini, bukan cuma itu yang akan lo pelajari. Lo juga akan belajar, nilai nilai fungsi trigonometri di kuadran lain, kesamaan daerah hasil dari fungsi-fungsi trigonometri yang berbeda, dan lain-lain. Buruan deh cek videonya! </p>
+{% endblock %}
