@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Grafik Trigonometri dan Transformasi Geometri</h3>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Circle_cos_sin.gif" alt="Animasi grafik fungsi sin dan cos" title="Animasi grafik fungsi sin dan cos">
+  <p>Oke, sekarang di sini kita akan belajar grafik trigonometri dengan sedikit bahas transformasi geometri. Penting nih untuk belajar ini, karena bakal sering dipake. Contohnya di Bab Gelombang, dan Listrik/Magnet pada fisika kelas XII SMA, di biologi dan di banyak program studi lainnya juga dipake. Kita mulai aja pembahasannya dari Transformasi Geometri.</p>
+  <p>Itu tuh di atas banget adalah contoh grafik trigonometri, nanti bakalan dibahas secara mendalam. Sekarang, lo perhatiin deh grafiknya pada saat 0θ aja. Kalo di grafik yang cos mulai dari titik 1 satuan, sedangkan di grafik sin mulai dari titik 0 satuan.</p>
+  <h4>Transformasi geometri</h4>
+  <p>Dua konsep yang mesti lo pahami transformasi geometri adalah translasi dan dilatasi.</p>
+    <ol><li>Translasi</li>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Translation_geometry.gif" alt="Translasi">
+    <p>Translasi intinya adalah pergeseran suatu entitas(benda) geometrik aja. Lo liat gambar diatas, semua titik di grafik ABCD ditranslasikan sejauh (5,1) satuan. Jadi misalnya kalo gue punya titik (1,2) terus mau gue geser sejauh (2,4) satuan. maka</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    \binom{1}{2} \ \rightarrow \ \binom{2}{5} \quad \Rightarrow \quad \binom{1+2}{2+5} \ = \ \binom{3}{8}
+    $$
+  </div></div>
+  <p>Pern</p>
+  <li>Dilatasi</li>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Homothetic_transformation.svg/486px-Homothetic_transformation.svg.png" alt="Dilatasi" width="300px" height="270px">
+  <p>Kalo dilatasi intinya adalah memperbesar atau memperkecil suatu entitas geometri dari titik pusat tertentu. Lo liat di gambar, segitiga abc diperbesar sebanyak <em>k</em> kali dari titik O menjadi Segitiga a<sub>1</sub> b<sub>1</sub> c<sub>1</sub>. Misalnya, gue punya fungsi kuadrat dengan persamaan gini, terus mau gue dilatasiin sebanyak setengah kali dari titik (0,0) kali, maka </p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    y \ = \ x^{2} \ - \ 4x \ + 4 \ → \ k \ = \ \frac{1}{2} \\
+    2y \ = \ (2x)^{2} \ - \ 4(2x) \ + 4 \ \\
+    y \ = \ 2x^{2} - 4x - 4
+    $$
+  </div></div>
+  </ol>
+  <p>Lo udah paham kan apa yang dimaksud dengan dilatasi dan translasi. Kalo udah, sekarang gimana kalo ngetranslasiin atau dilatasiin grafik trigonometri? Kan kalo trigonometri beda tuh sama fungsi lain, dia adalah fungsi monoton dan satuannya make derajat beda kaya variabel biasa, grafiknya juga beda dong? Nah, di videonya ada tuh jawabannya. Bukan cuma itu, lo juga akan dikasih banyak latihan soal dan juga eksplorasi-eksplorasi <em>the nature of trigonometrical graph itself</em>! Untuk yang masih bingung konsep dilatasi dan transalasi juga jangan khawatir, ada penjelasannya secara detil. Lo tonton aja videonya dan kerjain soalnya sekarang!</p>
+
+{% endblock %}
