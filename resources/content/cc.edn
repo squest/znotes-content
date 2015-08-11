@@ -64,4 +64,7 @@
                             :filename "cc2928x01"}]}
     {:kode "CC 2580"
      :contents [{:title "Trigonometri eps 1"
-                            :filename "cc2580x01"}]}]
+                            :filename "cc2580x01"}]}
+    {:kode "CC 2581"
+     :contents [{:title "Trigonometri eps 2"
+                            :filename "cc2581x01"}]}]

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Trigonometri Lanjutan</h3>
+<p>Di bab ini banyak banget hal yang akan lo pelajari; mulai dari aturan sinus dan cosinus, rumus penjumlahan sinus dan cosinus, fungsi trigonometri di segitiga yang bukan siku-siku, dll. Tak perlu basa-basi, kita bahas aja beberapa hal yang akan lo pelajari sekarang.</p>
+<h4>Rumus penjumlahan sinus, cosinus dan tangen</h4>
+<p>Belajar matematika di <a href="zenius.net">zenius.net</a>, lo cuma perlu ngapalin <strong>maksimal</strong> tujuh rumus untuk bisa lulus ke PTN favorit lo. Nah, Rumus penjumlahan sinus, cosinus dan tangen adalah salah tiga dari tujuh rumus tersebut. Rumusnya adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  sin(x \pm y) \ = \ sin \ x \ cos \ y \ \pm \ cos \ x \ sin \ y \\
+  cos(x \pm y) \ = \ cos \ x \ cos \ y  \ \mp \ sin \ x \ sin \ y  \\
+  tan(x\pm y) = \frac{tan(x) \pm tan(y)}{1 \mp tan(x)tan(y)} \\
+  $$
+</div></div>
+<p>Kalo sudutnya ganda, maka secara postulat pertama, mereka berubah jadi</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  sin(x + x) \ = 2\ sin \ x \ cos \ x \  \\
+  cos(x \pm x) \ = \ cos^{2} \ x \   \ \mp \ sin^{2} \ x   \\
+  tan(x\pm x) = \frac{2tan(x)}{1 \mp tg^{2}(x)} \\
+  $$
+</div></div>
+<br>
+<h4>Aturan sinus dan cosinus</h4>
+<img src="http://www.hamilton.ie/mathschallenge/triangle_9.jpg" alt="Segitiga">
+<h5>Aturan sinus</h5>
+<p>Untuk segitiga bukan siku-siku yang memiliki sisi a, b, c dan masing-masing sisi berseberangan dengan sudut A, B, C. Maka berlaku aturan sinus </p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \frac{a}{sin\ A} = \frac{b}{sin\ B} = \frac{c}{sin\ C}
+  $$
+</div></div>
+<p>Jadi, kalo lo tau dua sisi dan satu sudut, atau dua sudut dan satu sisi, lo bisa tentuin deh segitiganya kaya gimana bentuk dan ukurannya. Di videonya ada penjelasannya kenapa begini. Untuk yang ini, jangan cuma lo apalin aja ya!</p>
+<h5>Aturan cosinus</h5>
+<p>Rumus aturan cosinus juga masuk salah satu dari tujuh rumus yang perlu lo hapal untuk lulus UN atau SNMPTN/SBMPTN. Untuk segitiga yang sama dengan segitiga di aturan sinus di atas; kalo lo tau dua sisi dan sudut yang mengapit dua sisi tersebut. Maka berlaku</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  a^{2} = \ b^{2} + c^{2} - 2bc\ cos\ A \\
+  b^{2} = \ c^{2} + a^{2} - 2ca\ cos\ B \\
+  c^{2} = \ a^{2} + b^{2} - 2ab\ cos\ C
+  $$
+</div></div>
+<p>Kalo lo tau semua sisi tapi gak tau satupun sudutnya, maka tinggal dibalik dikit jadi</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  cos\ A = \frac{b^{2} + c^{2} - a^{2}}{2bc},\ cos\ B = \frac{c^{2} + a^{2} - b^{2}}{2ca},\ cos\ C = \frac{a^{2} + b^{2} - c^{2}}{2ab}
+  $$
+</div></div>
+{% endblock %}
