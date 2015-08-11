@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Barisan dan Deret Geometri Ta Hingga</h3>
+<p>Di note sebelumnya kita membahas sebagian persamaan dan perbedaan antara barder aritmatika dan barder geometri. Nah, di note ini kita akan liat satu lagi perbedaan antara mereka. Beda dengan barder artimatika yang harus ditentukan sampe suku ke-berapa, kalo di barder geometri kita bisa memperhitungkan jumlah deret geometri sampe suku ke-tak-hingga! Kenapa bisa? Karena di barder geometri kita pake rasio. Tapi kira-kira, menuru lo kenapa kalo make rasio kita bisa tahu jumlah sampe suku ke-tak-hingga?.</p> <p>Sebelum bisa ngejawab pertanyaan di atas, lo perlu tau dulu jenis-jenis barder geometri. Barder geometri dibagi menjadi dua jenis yaitu barder geometri divergen dan konvergen berdasarkan nilai rasionya. Langsung aja kita liat perbedaan mereka.</p>
+<h4>Barder geometri divergen</h4>
+<p>Barder geometri divergen relatif lebih sering kita lihat. Berdasarkan namanya, barder ini makin besar nilainya seiring bertambahnya suku. Ia terus membesar karena nilai mutlak dari rasionya</p>
+<div class="row"><div class="col-xs-2">
+  $$ \left | r \right | \ > \ 1
+  $$
+</div></div>
+<p>Berikut adalah contoh deret geometri divergen</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  1+2+4+8+16+32+64+.... \\
+  \left | r \right | \ = \ 2
+  $$
+</div></div>
+<p>Untuk deret di atas, kita gak bisa tuh cari hasil penjumlahan mereka semua karena nilai terus membesar. Bayangin aja, lo punya sepasang kelinci yang abadi dan beranak sepasang kelinci juga tiap tahunnya. Tahun pertama lo punya satu pasang, tahun kedua punya dua pasang, tahun ketiga punya empat pasang, tahun empat, tahun lima, dan seterusnya. Sekarang ditanya, berapa jumlah pasang kelinci di tahun ke-tak-hingga? Bingung kan gimana jawabnya. hehe.</p>
+<h4>Barder geometri konvergen</h4>
+<p>Sekarang gimana kalo gini. Ada bocah namanya Zeno. Si Zeno ini mau ke rumah si Parmenides temennya yang berjarak satu kilometer dari rumahnya. Tepat di tengah jalan, Zeno liat ternyata butuh waktu setengah jam untuk menempuh setengah kilometer. Berarti tinggal setengah kilo lagi kan menuju rumah temennya. Tepat di tengah setengah kilo kedua itu itu, Zeno liat jam lagi, ternyata kali ini butuh waktu seperempat jam dari titik tengah pertama ke titik tengah kedua. Di titik tengah ketiga juga gitu, Zeno liat lagi jam ternyata butuh waktu seperdelapan jam, begitu juga di titik tengah keempat dan seterusnya sampe ke-tak-hingga. Beginilah kira-kira perjalan si Zeno</p>
+<img src="http://s2.postimg.org/8a8dtgbmx/Untitled.png" alt="Zeno's journey">
+<br>
+<br>
+<p>Sekarang ditanya, berapa lama perjalan Zeno? Tak hingga kah? Ternyata nggak men, jawabannya satu jam. Lah? Tau dari mana satu jam? Sekarang lo perhatiin, deretan bilangan di atas itu adalah deret geometri juga kan sebenernya. Cuma rasionya aja mengecil. Perjalan zeno ini adalah contoh dari deret geometri konvergen.</p>
+<p>Jika barder geometri divergen memiliki rasio yang mutlaknya lebih dari 1. Barder geometri konvergen adalah barder yang nilai mutlak dari rasionya kurang dari 1. Salah satu contohnya adalah perjalan si Zeno di atas. Dimana </p>
+<div class="row"><div class="col-xs-2">
+  $$
+  S_{n} \ = \ \frac{1}{2} \ + \ \frac{1}{4} \ + \ \frac{1}{8} \ + \ \frac{1}{16} \ + .... \\
+  \left | r \right | \ = \ \frac{1}{2}
+  $$
+</div></div>
+<p>Lo inget kan di note sebelumnya kalo nilai jumlah dari deret geometri adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  S_{n} \ = \ \frac{a \ (1 \ - \ r^{n})}{(1 \ - \ r)} $$
+</div></div>
+<p>Sekarang untuk kasus si Zeno, berhubung nilai n adalah tak hingga dan nilai mutlak dari r dalah setengah, maka</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \lim_{n \rightarrow \infty} r^{n} \ = \ (\frac{1}{2})^\infty \ = \ \frac{1}{\infty} \ = \ 0
+  $$
+</div></div>
+<p>Karena nilai r<sup>n</sup> sama dengan nol. Maka nilai S<sub>n</sub> di atas, untuk n yang tak hingga dan r yang kurang dari satu mutlaknya, berubah jadi</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  S_{\infty} \ = \ \frac{a \ (1 \ - \ 0)}{(1 \ - \ r)} \\
+  S_{\infty} \ = \ \frac{a}{(1 \ - \ r)} $$
+</div></div>
+<br>
+<p>Begitulah cara kita mencari jumlah deret yang sukunya sampe tak hingga. Tapi, bukan cuma itu yang akan lo pelajari di sini. Ada banyak lagi eksplorasi-eksplorasi macem macem di deret geometri tak hingga. Tipe-tipe soalnya juga banyak. Langsung aja deh lo tonton dan kerjain soal-soal di interactive module-nya.</p>
+{% endblock %}

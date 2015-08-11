@@ -58,4 +58,7 @@
                             :filename "cc2568x02"}]}
    {:kode "CC 2929"
     :contents [{:title "Barisan dan Deret Geometri"
-                            :filename "cc2929x01"}]}]
+                            :filename "cc2929x01"}]}
+   {:kode "CC 2928"
+    :contents [{:title "Barisan dan Deret Geometri Tak Hingga"
+                            :filename "cc2928x01"}]}]
