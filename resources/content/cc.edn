@@ -79,4 +79,7 @@
                             :filename "cc2579x01"}]}
     {:kode "CC 2958"
      :contents [{:title "Lingkaran"
-                            :filename "cc2958x01"}]}]
+                            :filename "cc2958x01"}]}
+    {:kode "CC 2047"
+       :contents [{:title "Vektor"
+                            :filename "cc2047x01"}]}]

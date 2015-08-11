@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Vektor: Definisi dan Nilai Vektor</h3>
+<h4>Pengertian vektor</h4>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Vector_rect.png" alt="vektor">
+ <p>Vektor di matematika adalah objek geometris, biasanya berbentuk segmen garis, yang dipertimbangkan <em>both</em> besar dan arahnya. Vektor biasanya dinotasikan dengan dua notasi titik yang diberi topi anak panah. Misalnya</p><div class="row"><div class="col-xs-2"> $$ \overrightarrow{AB} $$ </div></div> <p> Cara baca vektor di atas adalah, garis yang menghubungan titik A dan titik B. Karena vektor mempertimbangkan besar dan arah maka pada gambar di atas</p>
+ <div class="row"><div class="col-xs-2">
+   $$
+   \overrightarrow{AO} \ \neq \ \overrightarrow{BO}
+   $$
+ </div></div>
+ <p>Walaupun besar mereka sama, tapi mereka tetep gak bisa disebut sama karena arahnya berbeda.</p>
+ <h4>Vektor posisi, besar vektor, dan </h4>
+ <p>Vektor posisi suatu titik adalah vektor yang ditarik dari titik (0,0) ke titik tersebut. Misalnya ada vektor posisi titik A (2,3) adalah</p>
+ <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Position_vector.svg/286px-Position_vector.svg.png" alt="Vektor posisi">
+ <p>Perlu diinget kalo vektor itu bisa kita pisahin tiap dimensinya. Jadi si vektor OA pindah 2 satuan searah sumbu x dan pindah 3 satuan ke arah sumbu y dari titik (0,0). Sekarang gue tambah lagi titik B (-2, 1), Gimana cara kita nyari vektor AB? </p>
+ <div class="row"><div class="col-xs-2">
+   $$
+   \overrightarrow{AB} \ = \ \begin{bmatrix}
+                            X_{B}-X_{A}\\ Y_{B}-Y_{A}
+                            \end{bmatrix} \\
+    \overrightarrow{AB} \  = \ \begin{bmatrix}
+                               -2-2\\ 3-1
+                               \end{bmatrix} \\
+                               \overrightarrow{AB} \  = \ \begin{bmatrix}
+                                                          -4\\ 2
+                                                          \end{bmatrix} \\
+   $$
+ </div></div>
+ <p>Kita tahu bahwa vektor OA adalah (2,3). Tapi kan itu kalo dipisah ke dua dimensi yang berbeda. Panjang si garisnya itu sendiri gimana? Yaudah gampang aja, lo tarik aja garis ke kanan 2, ke atas 3 dari titik (0,0) jadi segitiga siku-siku kan? Dimana vektor OA ada sisi miringnya. Kalo gitu gampang tinggal pake teorema Phytagoras</p>
+ <div class="row"><div class="col-xs-2">
+   $$
+   \left | \overrightarrow{OA} \right | \ = \ \sqrt{2^{2}+3^{2}} \\
+   \left | \overrightarrow{OA} \right | \ = \ \sqrt{13}
+   $$
+ </div></div>
+ <p>Segitu lah panjang si vektor OA.</p>
+ <p>Pembahasan tentang vektor lainnya akan dilanjut di note berikutnya. Untuk pembahasan videonya, langsung aja tonton videonya Kak Sabda.</p>
+{% endblock %}
