@@ -73,4 +73,7 @@
                             :filename "cc2582x01"}]}
     {:kode "CC 2583"
      :contents [{:title "Trigonometri eps 4"
-                            :filename "cc2583x01"}]}]
+                            :filename "cc2583x01"}]}
+    {:kode "CC 2579"
+     :contents [{:title "Peluang"
+                            :filename "cc2579x01"}]}]

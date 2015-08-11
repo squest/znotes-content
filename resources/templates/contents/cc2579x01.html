@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Probabilitas</h3>
+<p>Kali ini kita bakal bahas peluang; mulai dari definisi faktorial, konsep permutasi, sampe konsep kombinasi. Di matematika, peluang digunanakan untuk menganalisa fenomena-fenomena yang terjadi secara acak. Yang gue maksud acak adalah saat dimana gak ada pola yang dapat kita kenal sebagai penyebab terjadinya fenomena-fenomena tersebut. Contohnya adalah mata dadu, narik satu kartu dari dek, dll. Biasanya peluang didefinisika sebagai perbanding antara outcome yang diharapkan dengan total outcome yang ada. Contohnya, ketika lo lempar dadu, berapa kemungkinan keluarnya angka 3? Yang kita harapkan cuma satu, yaitu angka 3. Outcomenya bisa macem-macem dari angka 1 sampe angka 6. Jadi kemungkinannya ada 1 dari 6 atau 1/6 atau 13,33%.  Langsung aja ya</p>
+<h4>Faktorial</h4>
+<p>Faktorial, dinotasikan dengan tanda seru(!), adalah suatu proses pengalian suatu angka dengan faktorial dari angka sebelumnya hingga sampai di faktorial dari nol yaitu satu. Kalo ditulis secara matematis jadi </p>
+<div class="row"><div class="col-xs-2">
+  $$
+  n! \ = \ n \ * \ (n-1)! \\
+  0! \ = \ 1
+  $$
+</div></div>
+<p>Jadi, si n ini dikali dengan faktorial angka sebelumnya, dan angka sebelum n juga dikali dengan faktorial dari angka sebelum dari angka sebelum n. Terus begitu sampe ketemu faktorial dari nol yaitu satu. Contoh, faktorial dari 4 adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  n! \ = \ n \ * \ (n-1)! \\
+  0! \ = \ 1 \\
+  . \\
+  4! \ = \ 4 \ * \ 3! \\
+  4! \ = \ 4 \ * \ 3 \ * \ 2! \\
+  4! \ = \ 4 \ * \ 3 \ * \ 2 \ * \ 1! \\
+  4! \ = \ 4 \ * \ 3 \ * \ 2 \ * \ 1 \ * \ 0! \\
+  4! \ = \ 4 \ * \ 3 \ * \ 2 \ * \ 1 \ * \ 1 \\
+  $$
+</div></div>
+<h4>Permutasi</h4>
+<p>Permutasi adalah jumlah kemungkinan yang ada untuk melakukan sesuatu. Gampangnya gini, permutasi adalah perbandingan antara semua kemungkinan yang kita inginkan dengan memperdulikan urutannya dengan kemungkinan-kemungkinan yang gak mungkin. Apa yang dimaksud dengan peduli urutan? Di permutasi, Jon, Bob, June adalah suatu kemungkinan yang berbeda dengan Bob, June, Jon. Sekarang misalanya gue punya tujuh kucing, tapi cuma punya dua kandang? Berapa permutasi atau jumlah kemungkinan untuk kejadian ini? Kalo liat rumusnya sih </p>
+<div class="row"><div class="col-xs-2">
+  $$
+  _{n}P_{k} \ = \ \frac{n!}{n-k!}
+  $$
+</div></div>
+<p>Jangan lo apalin nih, di videonya Kak Sabda punya cara yang dengan mikir dikit bisa ngerti konsepnya. Kembali ke urusan kucing di atas, jadi gini cara penyelesaiannya. Gue punya tujuh kucing, tapi cuma ada dua kandang. Dengan asumsi satu kandang satu kucing, sampe jungkir balik pun kucing yang lima gak bakal bisa masuk kandang. Maka sesuai pengertian gampangan di atas, jadi permutasinya adalah pembagian kemungkinan 7 kucing dalam kandang dan kemungkinan 5 kucing yang gak mungkin masuk ke dalam kandang</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  _{7}P_{2} \ = \ \frac{7!}{7-2!} \\
+  _{7}P_{2} \ = \ \frac{7!}{5!} \\
+  _{7}P_{2} \ = \ \frac{7*6*5*4*3*2*1*0!}{5*4*3*2*1*0!} \\
+  _{7}P_{2} \ = \ 7*6 \ = 42
+  $$
+</div></div>
+<p>Berarti ada 42 kemungkinan gue masukin tujuh kucing ke dalam dua kandang. Inget ya, dalam permutasi urutannya penting. Kucing 1 dalam Kandang A dan kucing 2 dalam kandang adalah kemungkinan yang <strong>berbeda</strong> dengan kucing 1 dalam kandang B dan kucing 2 dalam kandang A.</p>
+<h4>Kombinasi</h4>
+<p>Kombinasi sama dengan permutasi tapi kali ini kita gak peduli urutannya. Mau Jon dan June, atau June dan Jon. Gak peduli. Itu semua diitung sebagai satu kemungkinan. rumusnya juga beda, jadi kombinasi adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  _{n}C_{k} \ = \ \frac{_{n}P_{k}}{k!} \\
+  _{n}C_{k} \ = \ \frac{n!}{(n-k!)(k!)}
+  $$
+</div></div>
+<p>Jadi kalo di urusan kucing kita bersama jadi kucing 1 dalam Kandang A dan kucing 2 dalam kandang adalah satu kemungkinan yang <strong>sama</strong> dengan kucing 1 dalam kandang B dan kucing 2 dalam kandang A. Kalo gitu, kombinasinya adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  _{7}C_{2} \ = \ \frac{7!}{(7-2!)(2!)} \\
+  _{7}C_{2} \ = \ \frac{7!}{(5!)(2!)} \\
+  _{7}P_{2} \ = \ \frac{7*6*5*4*3*2*1*0!}{(5*4*3*2*1*0!)(2*1*0!)}
+  _{7}P_{2} \ = \ 7*3 \ = 21 \\
+  $$
+</div></div>
+{% endblock %}
