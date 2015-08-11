@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Lingkaran</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Circle_sector.png" alt="Circle">
+<p>Di kelas XI SMA, lingkaran biasanya adalah salah satu bab paling ditakuti setelah trigonometri. Sebenernya sih konsepnya gampang aja. Bahkan gak ada satu rumus pun yang perlu lo hapal. Kalo lo udah belajar teori lingkaran dange ngerjain soal-soalnya di zenius.net, ketika lo lupa, lo gak akan bingung dan akan bisa nurunin semua persamaannya.</p>
+<p>Secara definisi, lingkaran adalah himpunan semua titik yang berjarak sama dengan titik pusat. Jaraknya yang sama ini lah yang disebut jari-jari atau radius(r). Lo liat deh di gambar di atas. Semua titik yang ada di garis lingkaran ini berjarak sama (r) ke titik pusat O. Bentuk umum lingkaran diturunkan dari teorema Phytagoras dengan nilai x dan yang berselisih. Bentuk umumnya adalah adalah:</p>
+<div class="row"><div class="col-xs-2">
+  $$(Δx)^{2} + (Δy)^{2} = r^{2} \\
+    (x-x_{p})^{2} + (y-y_{p})^{2} = r^{2} \\
+    $$
+</div></div>
+<p>Dengan x<sub>p</sub> dan y<sub>p</sub> adalah titik x dan titik y adalah titik pusat dan r adalah jari-jari.</p>
+<br>
+<p>Hal lainnya yang perlu lo pahami di lingkaran adalah gradien garis singgung. Di bab fungsi kuadrat pernah di bahas bahwa turunan dari fungsi kuadrat itu adalah gradien garis singgung. Nah, di lingkaran juga sama. Walau lingkaran gak bisa disebut fungsi karena <em>item</em> di daerah asal bisa memiliki dua hasil fungsi. Sekarang gue punya lingkaran yang persamaannya kaya gini, dia bersinggungan di titik (x=2) kuadran satu dengan garis lurus. Bagaimana persamaan garisnya? Pertama, cari dulu nilai y di tempat mereka bersinggungan</p>
+<div class="row"><div class="col-xs-2">
+  $$
+    x^{2} \ + \ y^{2} \ = \ 16 \\
+    4 \ + \ y^{2} \ = \ 16 \\
+    y^{2} \ = \ 12 \\
+    y \ = \ 2 \sqrt{3}
+  $$
+</div></div>
+<p>Abis itu lo cari gradien garis singgungnya make turunan</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  x^{2} \ + \ y^{2} \ = \ 16 \\
+  d(x^{2} \ + \ y^{2}) \ = \ d(16) \\
+  2x \ dx \ = \ - \ 2y \ dy \ \\
+  \frac{dy}{dx} \ = \frac{-x}{y}
+  m_{gs} \ = \ \frac{-2}{2 \sqrt{3}}
+  $$
+</div></div>
+<p>Sekarang lo masukin deh gradiennya ke bentuk umum persamaan garis</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  y \ = \ mx \ + \ c \\
+  2 \sqrt{3} \ = \frac{-2}{2 \sqrt{3}} \ * \ 2 \ + \ c \\
+  c \ = \   2 \sqrt{3} \ - \frac{-2}{2 \sqrt{3}} \ * \ 2 = \frac{8}{\sqrt{3}} \\
+  . \\
+  \therefore \quad y \ = \ \frac{-2}{2 \sqrt{3}}x \ + \ \frac{8}{\sqrt{3}}
+  $$
+</div></div>
+<p>Untuk lebih jelasnya, <em>please check the video and work the exercises!</em></p>
+{% endblock %}

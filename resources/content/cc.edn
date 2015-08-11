@@ -76,4 +76,7 @@
                             :filename "cc2583x01"}]}
     {:kode "CC 2579"
      :contents [{:title "Peluang"
-                            :filename "cc2579x01"}]}]
+                            :filename "cc2579x01"}]}
+    {:kode "CC 2958"
+     :contents [{:title "Lingkaran"
+                            :filename "cc2958x01"}]}]
