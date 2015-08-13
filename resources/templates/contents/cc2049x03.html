@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Turunan Trigonometri dan Perkalian Turunan</h3>
+<p>Anak SMA yang mau ujian negara, SBMPTN, atau tes mandiri PTN lainnya, biasanya suka males belajar kalkulus karena ada trigonometrinya. Sebenernya gampang aja, konsepnya sih gak ada bedanya sama turunan fungsi biasa, <em>e.g</em> nurunin x<sup>2</sup> misalnya. Di note ini bakal dibahas tuh turunan dari fungsi trigonometri. Di sini juga bakal dibahas turunan dari perkalian fungsi. <em>By the way</em> kalo lo belom liat note sebelumnya, cek dulu ya.</p>
+<h4>Turunan trigonometri</h4>
+<p>Di note sebelumnya udah dijelasin kalo turunan adalah gradien garis singgung, definisi matematisnya adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  f'(x) \ ⇒ \ \lim_{Δx\rightarrow0} \ \frac{f(x+Δx)-f(x)}{Δx}
+  $$
+</div></div>
+<p>Gimana kalo fungsinya adalah fungsi trigonometri? Fungsi trigonometri kan beda, make sin, cos, dll? Gimana cara nuruninnya? Sebenernya sih untuk fungsi trigonometri juga sama aja. Misalnya gue punya fungsi</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  f(x+h) \ = \ sin(x+h)
+  $$
+</div></div>
+<p>Maka turunan dari fungsi tersebut adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  f'(x+h) \ = \ sin'(x+h) \ = \lim_{h\rightarrow0} \ \frac{sin(x+h)-sin(x)}{h} \\
+  $$
+</div></div>
+<p>Sesuai dengan postulat tiga, si <em>sin</em>(x+h)-nya sendiri bisa dipecah jadi</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  sin'(x+h) \ = \lim_{h\rightarrow0} \ \frac{sin(x)cos(h)+sin(h)cos(x)-sin(x)}{h}
+  $$
+</div></div>
+<p>Lalu, karena h mendekati nol jadi si cos(h) itu nilainya mendekati satu. maka </p>
+<div class="row"><div class="col-xs-2">
+  $$
+  sin'(x+h) \ = \lim_{h\rightarrow0} \ \frac{sin(h)cos(x)}{h}
+  $$
+</div></div>
+<p>Inget kan di limit jika h-nya mendekati nol, maka</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \lim_{h\rightarrow0} \ \frac{sin(h)}{h} \ = \ 1
+  $$
+</div></div>
+<p>Karena h-nya mendekati nol, jadi kalo sekarang h-nya diilangin dari fungsi awal, dapet deh turunannya <em>sin</em></p>
+<div class="row"><div class="col-xs-2">
+  $$
+  sin'(x+h) \ = \lim_{h\rightarrow0} \ \frac{sin(h)cos(x)}{h} \\
+  sin'(x+h) \ = \ cos(x) \\
+  \therefore \ sin'(x) \ = \ cos(x)
+  $$
+</div></div>
+<p>Nah, untuk <em>cos</em>, <em>tan</em>, dll, coba deh lo turunin sendiri.</p>
+<h4>Turunan perkalian fungsi</h4>
+<p>Sekarang gimana kalo ketemu fungsi yang dikali atau dibagi fungsi lain?</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  J(x) \ = \ F(x) \ . \ G(x)
+  H(x) \ = \ \frac{F(x)}{G(x)}
+  $$
+</div></div>
+<p>langsung aja kah turunin masing-masing fungsi?</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  J'(x) \ = \ F'(x) \ . \ G'(x)
+  H'(x) \ = \ \frac{F'(x)}{G'(x)}
+  $$
+</div></div>
+<p>Atau gimana?</p>
+<p>Yang jelas gak kaya gitu men, ngawur itu. ada aturannya sendiri untuk perkalian dan pembagian fungsi. Gue gak bisa nurunin semuanya di sini jadi gue tulis hasilnya doang. Tapi jangan lo apal ya! Rugi kalo lo hapal doang. Baiknya lo coba dulu turunin pake definisi turunan yang di awal, abis itu tonton videonya. Jangan lupa kerjain juga soal-soalnya. Oke, jadi turunan dari perkalian dan pembagian fungsi adalah </p>
+<div class="row"><div class="col-xs-2">
+  $$
+  d(F(x) \ . \ G(x)) \ = \ F(x)G'(x) \ + \ F'(x)G(x) \\
+  . \\
+  d(\frac{F(x)}{G(x)} \ = \ \frac{F(x)G'(x) \ + \ F'(x)G(x)}{(G'(x))^{2}}
+  $$
+</div></div>
+<p>Segini dulu untuk bab Turunan, selanjutnya kita akan belajar integral.</p>
+{% endblock %}

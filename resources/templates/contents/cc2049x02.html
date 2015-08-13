@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Turunan: Operator d dan Turunan berantai</h3>
+<p>Sekarang kita lanjut ke operator 'd' dan turunan berantai di bab turunan ini. Ini adalah note lanjutan di bab turunan. Jadi, seperti biasa, kalo lo belum liat note sebelumnya, mending lo liat dulu.</p>
+<h4>Operator d</h4>
+<p>Sama seperti operator lainnya(+, -, :, dll), opetor 'd' juga memproses satu atau lebih entitas sebagai input untuk menjadi entitas lain sebagai output dari proses tersebut. Operator 'd' ini kerjanya adalah nurunin apa yang ada di sebelahnya. Misalnya gue punya ini, kalo gue operasiin pake operator d, maka</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  dx^{2} \ = \ 2x \ dx
+  $$
+</div></div>
+<p>Jadi secara matematis, operator d adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  dx^{n} \ = \ nx^{n-1} \ dx \\
+  dx \ = \ 1 \\
+  dc \ = \ 0, \quad \left \{ c \ | \ c \ ϵ \ \mathbb{R} \right \}
+  $$
+</div></div>
+<p>Ya kira-kira operator 'd' mempermudah kita untuk melakukan turunan lah, daripada harus nulis lim-lim-an terus hehe. </p>
+<p>Oh iya, untuk operasi penjumlahan atau pengurangan, berlaku sifat</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  d(x^{n} \pm y^{n}) \ = \ nx^{n-1} \ + \ ny^{n-1}
+  $$
+</div></div>
+<h4>Turunan berantai </h4>
+<p>Ketika ada fungsi di dalem fungsi, lo gak bisa nurunin seenaknya. Ada aturan yang namanya aturan rantai(<em>The Chain Rule</em>). Lo harus ati-ati di sini. Misalnya gue punya</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  j(x) \ = \ h(g(f(x)))
+  $$
+</div></div>
+<p>Untuk nurunin fungsi diatas, lo harus nurunin fungsi paling luar dulu sebelum nurunin fungsi yang di dalem secara rekursif hingga nemu (dx). Jadi, turunan dari fungsi diatas secara pelan pelan adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  d(j(x)) \ = \ d(h(g(f(x)))) \\
+  d(j(x)) \ = \ (h'(g(f(x)))) \quad d(g(f(x))) \\
+  d(j(x)) \ = \ (h'(g(f(x)))) \ g'(f(x)) \quad d(f(x)) \\
+  d(j(x)) \ = \ (h'(g(f(x)))) \ g'(f(x)) \ f'(x) \quad dx \\
+  $$
+</div></div>
+
+<p>Oke segini dulu. Kalo masih bingung maksudnya turunan berantai atau operator d ini kerjanya bagaimana, ga apa apa. Di videonya ada banyak videonya yang jelas dan gampang. Lo bakal mudah ngerti deh. Pembahasan kita tentang turunan dilanjutin di note berikutnya.</p>
+{% endblock %}

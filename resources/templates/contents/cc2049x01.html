@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Turunan: Sebuah Definisi Matematis</h3>
+<p>Gue yakin lo yang mau UN atau SBMPTN, pasti pernah make turunan sebelumnya. Di fisika kelas satu pernah kan dikasih tau kalo salah satu cara nyari kecepatan sebuah objek adalah menurukan percepatannya. Misalnya, ada benda yang percepatannya</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  a \ = \ 2t^{2}
+  $$
+</div></div>
+<p>Maka kecepatannya adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  v \ = \ 4t
+  $$
+</div></div>
+<p>Tapi lo tau nggak sebenernya adalah turunan itu apa? Turunan adalah gradien garis singgung. Walaupun garis singgung, garis ini tetep motong di dua titik. Tapi jarak antara kedua titik itu deket banget jadi dianggap cuma nyinggung doang. Kira-kira gini maksudnya:</p>
+<img src="http://s10.postimg.org/dufzn7o6h/dif.png" alt="Diff" height="300" width="220">
+<p>Ada suatu garis lurus yang memotong kurva di titik (x, f(x)) dan titik (x+Δx, f(x+Δx)). Secara sumbu x, kedua titik itu makin mendekat (Δx atau h-nya mengecil). dari sini kan bisa kita tahu gradiennya</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  m \ = \ \frac{Δy}{Δx} \ = \ \frac{f(x+Δx)-f(x)}{Δx}
+  $$
+</div></div>
+<p>Sejauh ini gak ada masalah. Tapi gimana kalo garis ini berpotongan pada dua titik yang gak ada jaraknya (Δx=0), alias mereka adalah satu titik yang sama? Di matematika, kan haram hukumnya untuk membagi sesuatu dengan nol. Maka dari itulah kita limit perlu disini. Anggap aja sebenernya dua titik ini ada jaraknya, tapi jaraknya keciiiil banget sehingga kita bisa melakukan operasi pembagian. Nah limit ini lah yang disebut gradien garis singgung dan juga disebut turunan. Jadi, secara Matematis turunan adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  f'(x) \ ⇒ \ \lim_{Δx\rightarrow0} \ \frac{f(x+Δx)-f(x)}{Δx}
+  $$
+</div></div>
+<p>Pahami baik-baik ya. Jadi kalo lo ditanya turunan itu apa, lo gak asal nurunin pangkat doang. Tapi lo tau kenapanya. Untuk penjelasan yang lebih jelas dan lebih dalem lagi lo bisa langsung cek videonya di zenius.net. Di sana juga ada banyak contoh soal yang bisa lo kerjain.</p>
+
+{% endblock %}

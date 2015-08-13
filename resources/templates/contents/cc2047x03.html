@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Vektor: Proyeksi Skalar dan Orthogonal</h3>
+<p>Selain operasi vektor, ada juga yang namanya proyeksi vektor. Proyeksi vektor terdengar rumit dan susah sehingga banyak anak SMA males buat belajar. Bahkan dari pengalaman gue sih sampe ada yang beneran percaya kalo proyeksi vektor itu susah karena denger namanya aja udah rumit. Sebenernya nggak sih, gampang kok.</p>
+<h4>Proyeksi skalar vektor</h4>
+<br>
+<img src="http://s14.postimg.org/reaw0vy2p/1600px_Dot_Product_svg.png" alt="1" height="200" width="200">
+<p>Jadi apa itu proyeksi vektor? Gampangnya, kalo liat gambar diatas, proyeksi vektor A ke vektor B adalah narik bayangan vektor A di Vektor B kalo sumber cahaya penghasil bayangannya berada di atas si vektor A dan tepat tegak lurus terhadap si vektor B. Kira-kira gini vektor hasil proyeksinya</p>
+<br>
+<img src="http://s10.postimg.org/63ktbpbmx/1600px_Dot_Product_svg.png" alt="2" height="200" width="200">
+<p>Gimana cara ngitungnya? Lo masih inget definisi kosinus di trigonometri kan? Nah dari situ kita tau, kalo kita punya sudutnya, kita bisa tau panjang sisi/garis di samping nilainya berapa make kosinus si sudut itu. Jadi</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \left | A' \right | \ = \ \left | A \right | \ cosθ
+  $$
+</div></div>
+<br>
+<img src="http://s3.postimg.org/d240samyr/600px_Dot_Product_svg.png" alt="3" height="300" width="300">
+<br>
+<p>Sementera dari note Operasi Vektor sebelumnya kita tau bahwa</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  cos θ \ = \ \frac{\overline{x} \ . \overline{y}}{ \left | x \right | \left | y \right |}
+  $$
+</div></div>
+<p>Maka</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \left | A' \right | \ = \ \left | A \right | \ cosθ \\
+  cos θ \ = \ \frac{A. B}{ \left | A \right | \left | B \right |} \\
+  ∴ \left | A' \right | \ = \ \left | A \right | \ \frac{A. B}{ \left | A \right | \left | B \right |} \\
+  ∴ \left | A' \right | \ = \ \frac{A. B}{ \left | B \right |}
+  $$
+</div></div>
+<p>Dapet deh, gampang kan?</p>
+<h4>Proyeksi orthogonal vektor</h4>
+<p>Udah? Eits, tunggu dulu. Lo perhatiin itu hasilnya skalar, karena itu adalah proyeksi skalar <strong> vektor A'</strong> yang merupakan panjangnya. Kalo cara nyari si vektor A'-nya sendiri gimana? Ya gampang aja, tinggal lo bandingin panjang dia dengan panjang vektor B, terus lo kaliin hasilnya dengan vektor satuan B.</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  A' \ = \ \left | A' \right | \ \frac{B}{\left | B \right |} \\
+  A' \ = \ \frac{A. B}{ \left | B \right |} \frac{B}{\left | B \right |} \\
+  A' \ = \ \frac{A. B}{ \left | B \right |^{2}} \ * \ (B)
+  $$
+</div></div>
+<p>Ta-da! Dapet deh vektor proyeksinya. "Bro, bro. terlalu abstrak. Tunjikin contoh soalnya dong?!" Waduh men, udah gampang ini. Kalo masih bingung atau mau liat contoh soalnya, langsung aja deh lo tonton videonya. Jangan lupa kerjain soal-soalnya ya!</p>
+
+{% endblock %}

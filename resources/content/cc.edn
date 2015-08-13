@@ -82,4 +82,15 @@
                             :filename "cc2958x01"}]}
     {:kode "CC 2047"
        :contents [{:title "Vektor"
-                            :filename "cc2047x01"}]}]
+                            :filename "cc2047x01"}
+                            {:title "Vektor 2"
+                                                 :filename "cc2047x02"}
+                                                 {:title "Vektor 3"
+                                                                      :filename "cc2047x03"}]}
+     {:kode "CC 2049"
+     :contents [{:title "Turunan"
+                            :filename "cc2049x01"}
+                            {:title "Turunan 2"
+                                                   :filename "cc2049x02"}
+                                                   {:title "Turunan 3"
+                                                                          :filename "cc2049x03"}]}]

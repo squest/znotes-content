@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Vektor: Operasi Vektor</h3>
+<p>Vektor itu, walaupun berbentuk segmen garis, ternyata bisa kita operasikan seperti aljabar bisa. Vektor bisa ditambah, dikurang, atapun dikali.</p>
+<ol>
+  <li>Penjumlahan dan pengurangan vektor</li>
+  <p>Misalnya gue punya vektor\overline{a} dan vektor\overline{b} yang masing punya nilai</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    \overline{a} \ = \ \begin{bmatrix}  0 \\ 5 \end{bmatrix} \\
+    \overline{b} \ = \ \begin{bmatrix}  4 \\ 4 \end{bmatrix} \\
+    $$
+  </div></div>
+  <p>Sekarang diminta: berapa\overline{a} +\overline{b} dan\overline{a} -\overline{b}? Ya gampang, lo tinggal jumlahin atau kurangin komponen dari vektor\overline{a} yang sejenis dengan komponen dari vektor\overline{b}. Maka </p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    \overline{a} \ + \ \overline{b} \ = \begin{bmatrix}  0+4 \\ 5+4 \end{bmatrix}  \ = \ \begin{bmatrix}  4 \\ 9 \end{bmatrix} \\
+    \overline{a} \ - \ \overline{b} \ = \begin{bmatrix}  0-4 \\ 5-4 \end{bmatrix} \ = \ \begin{bmatrix}  -4 \\ 1 \end{bmatrix}
+    $$
+  </div></div>
+  <p>Gampang ya, bocah juga bisa. Tapi inget, vektor itu kan segmen garis. Gimana coba gambar garis yang ditambah garis lain? Gambarnya kira-kira gini</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Vector_addition_subtraction-NEW.png/640px-Vector_addition_subtraction-NEW.png" alt="Vector addition and subtraction">
+ <li>Perkalian vektor</li>
+ <p>Vektor juga bisa dikali. Perkalian vektor itu dibagi dua. Ada perkalian vektor dengan skalar, ada perkalian vektor dengan vektor.</p>
+   <ul>
+     <li>Perkalian dengan skalar</li>
+     <p>Kalo gue punya vektor a yang nilai komponennya adalah</p>
+     <div class="row"><div class="col-xs-2">
+       $$
+       \overline{a} \ = \ \begin{bmatrix}  2 \\ 0 \end{bmatrix} \\
+       $$
+     </div></div>
+     <p>Terus katanya vektor ini kekecilan, terus diminta untuk digedein dua kali lipat. Gimana caranya? yaudah</p>
+     <div class="row"><div class="col-xs-2">
+       $$
+       2*\overline{a} \ = \ 2*\begin{bmatrix}  2 \\ 0 \end{bmatrix} \ = \ \begin{bmatrix}  4 \\ 0 \end{bmatrix}
+       $$
+     </div></div>
+     <p>Kira-kira gini gambarnya</p>
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Vector-scalar-multiplication.svg/320px-Vector-scalar-multiplication.svg.png" alt="vector multiplication">
+     <li>Perkalian dengan vektor</li>
+     <p>Secara definisi pengkalian dalam vektor adalah</p>
+     <div class="row"><div class="col-xs-2">
+       $$
+       \overline{x} \ . \ \overline{y} =  \left | x \right | \left | y \right | \ cos \ \theta \\
+       cos θ \ = \ \frac{\overline{x} \ . \overline{y}}{ \left | x \right | \left | y \right |}
+       $$
+     </div></div>
+     <p>Kalo lo tau semua komponen vektor a dan b, bisa juga</p>
+     <div class="row"><div class="col-xs-2">
+       $$
+       \overline{x} \ . \ \overline{y} = \begin{bmatrix}  i_{x} \\ j_{x} \end{bmatrix} \ \begin{bmatrix}  i_{y} \\ j_{y} \end{bmatrix} \ = \ (i_{x}*i_{y})+(j_{x}*j_{y})
+       $$
+       </div></div>
+     <p>Sekarang ada lagi nih vektor b yang nilainya</p>
+     <div class="row"><div class="col-xs-2">
+       $$
+       \overline{b} \ = \ \begin{bmatrix}  2 \\ \sqrt{5} \end{bmatrix} \\
+       $$
+     </div></div>
+     <p>Nah, pangkal si vektor b ini nempel di pangkal vektor a yang di atas dengan sudut θ°(cos θ = 4/6). maka\overline{a} .\overline{b} adalah</p>
+     <div class="row"><div class="col-xs-2">
+       $$
+      \overline{a} \ . \ \overline{b} = \left | a \right | \left | b \right | cos θ \\
+      \overline{a} \ . \ \overline{b} \ = \ 2*3*\frac{4}{6} \\
+      \overline{a} \ . \ \overline{b} \ = \ 4
+       $$
+     </div></div>
+   </ul>
+</ol>
+<p>Gampang kan? Jangan sampe karena gampang lo gak kerjain soalnya. Soalnya banyak kok di zenius.net, lo kerjain aja semua. Kalo masih bingung, ada juga kok videonya yang ngejelasin hal ini secara enak dan asik banget.</p>
+{% endblock %}
