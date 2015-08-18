@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Integral Parsial dan Integral Substitusi</h3>
+<p>Di matematika kelas XII SMA kan banyak banget tuh rumus-rumus untuk integral parsial dan substitusi, sebenernya kalo untuk lulus SBMPTN dan UN atau tes lainnya, lo gak perlu ngapalin sebanyak itu. Di note ini kita akan ngebahas cara ngeproses integral, yang biasanya make integral substitusi untuk memprosesnya, dengan pake satu template doang. Misalnya ada persamaan kaya gini</p>
+<div class="row"><div class="col-xs-2">
+$$  \int (2x+4)^{4} \ dx \ = $$
+</div></div>
+<p>Kalo di SMA, kita bakal disuruh bikin memisalkan</p>
+<div class="row"><div class="col-xs-2">
+$$  u \ = \ 2x+4 $$
+</div></div>
+<p>Lalu lo akan diminta untuk nyari turunan si <em>u</em>, maka</p>
+<div class="row"><div class="col-xs-2">
+$$  u \ = \ 2x+4  \\
+  du \ = \ d(2x+4) \\
+  du \ = \ 2 \ dx \\
+  dx \ = \ \frac{1}{2} \ du $$
+</div></div>
+<p>Kemudian lo masukin nilai <em>dx</em> ini ke persamaan awal yang diminta,</p>
+<div class="row"><div class="col-xs-2">
+$$  \int (2x+4)^{4} \ dx \  \\
+    dx \ = \ \frac{1}{2} \ du \\
+    ⇒\int (2x+4)^{4} \ \frac{1}{2} \ d(2x+4) \ = \\
+    \frac{1}{2} \ \frac{1}{4+1} \ (2x+4)^{4+1} \ + C \ = \\
+    \therefore \frac{1} {10} (2x+4)^{5} $$
+</div></div>
+<p>Begitu kan kalo di sekolah? Lumayan aga ribet sih, harus misalin jadi <em>u</em>, cari turunannya, dll. Kalo di zenius.net, lo cuma perlu inget template awal, lo udah bisa ngerjain soal integral parsial ini. </p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \int □^{n} \ d□ \ = \ \frac{□^{n+1}}{n+1} \ + \ C
+  $$
+</div></div>
+<p>Sekarang kita coba lagi ngerjain soal di atas</p>
+<div class="row"><div class="col-xs-2">
+$$  \int (2x+4)^{4} \ dx \ = $$
+</div></div>
+<p>Ini gak bisa langsung kita kerjain masukin template karena bentuknya beda. Kalo gini, kita paksain aja ubah suapaya bentuknya sesuai template. Tapi, nanti kita kasih tambahan supaya apa yang kita ubah tetep sama sama yang diminta. Jadi pertama, kita ubah dulu jadi</p>
+<div class="row"><div class="col-xs-2">
+$$  \int (2x+4)^{4} \ d(2x+4) \ = $$
+</div></div>
+<p>Kalo gini udah sesuai template pertama kan, jadi bisa langsung kita integraliin. Tapi inget, karena kita ngubah apa yang disebelah operator <em>d</em>, maka kita perlu tambahan supaya sama dengan persamaan yang diminta. Kita liat kan kalo</p>
+<div class="row"><div class="col-xs-2">
+$$  d(2x+4) \ = 2 \ dx $$
+</div></div>
+<p>Secara postulat, kalo ini sama dengan dua kali itu, berarti itu ada setengah kali ini. Maka dari itu supaya sama, persamaannya harus kita bagi dua dulu sebelum diintegralin. Jadi,</p>
+<div class="row"><div class="col-xs-2">
+$$  \frac{1}{2} \ \int (2x+4)^{4} \ d(2x+4) \ = $$
+</div></div>
+<p>Abis itu dapet deh</p>
+<div class="row"><div class="col-xs-2">
+$$  \frac{1}{2} \frac{1}{5}(2x+4)^{5} \ = $$
+</div></div>
+<p>Lebih cepet kan? Kalo masih belum ngerti, santai aja. Di video-videonya juga dijelasin kok secara detil. Bukan cuma itu, untuk ngerjain integral parsial dan contoh soalnya juga ada.</p>
+{% endblock %}

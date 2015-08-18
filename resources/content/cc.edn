@@ -96,4 +96,6 @@
                                                                           :filename "cc2049x03"}]}
     {:kode "CC 2046"
      :contents [{:title "Integral"
-                            :filename "cc2046x01"}]}]
+                            :filename "cc2046x01"}
+                            {:title "Integral 2"
+                                                   :filename "cc2046x02"}]}]
