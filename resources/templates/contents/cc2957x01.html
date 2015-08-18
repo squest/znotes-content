@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Integral: Luas dan Volume Benda Putar</h3>
+<p>Integral juga bisa lo pake untuk nyari luas atau volume. Untuk mencari luas dan volume, konsepnya mirip sama rumus mencari luas suatu bangun datar atau bangun ruang biasa, misalnya balok dan silinder, yaitu panjang kali lebar atau alas kali tinggi. Bangun yang luas atau volumenya dicari pake integral biasanya bangun yang gak jelas dan gak ada rumusnya, jadi kita cari sendiri. Langsung aja contohnya</p>
+<h4>Luas</h4>
+<p>Misalnya gue punya grafik</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  y \ = \ x^{2}
+  $$
+</div></div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Y%3Dx%5E2.png" alt="grafik 1">
+<p>Nah gue pengen tau luasnya dari titik 0 sampe 2, gimana cara nyarinya? Sama aja men sama bangun ruang biasa, yaitu alas kali tinggi. Alasnya kan kita tau 2. Sekarang tingginya nih yang bermasalah, karena beda beda di setiap titik secara sisi atasnya adalah grafik x<sup>2</sup>. Kalo begini, gampangnya lo bikin aja banyak balok dibawah grafik itu abis itu lo jumlahin semuanya.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Riemann_Integration_and_Darboux_Lower_Sums.gif" alt="animasi 2">
+<p>Masing-masing balok punya tinggi x<sup>2</sup>(Yang juga merupakan fungsi f(x)-nya) dan alas Δx. Jadi luas satu balok adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  l \ = \ f(x) \ Δx
+  $$
+</div></div>
+<p>Nah karena untuk grafik ini ada buanyaak banget balok. Juga karena semakin banyak balok, Δx-nya semakin kecil, dan batasnya dari titik 0 sampe 2; maka luasnya jadi:</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \int_{0}{2} x^{2} \ dx  \\
+  ⇒ 2^{2} \ - \ 0^{2} \ = \ 4 \ satuan
+  $$
+</div></div>
+<p>Itulah luas grafik kita dari titik 0 < x < 2. Kalo ditarik umumnya, luas suatu bangun dibawah grafik adalah adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \int_{a}{b} F(x) \ dx  \\
+  $$
+</div></div>
+<p>Tapi coba deh lo perhatiin, luas bangun kita di atas kan dibatas oleh grafik y = F(X) dan sumbu x. Kalo batasnya yang lain gimana? Grafik lain misalnya? Nah, kalo ada 2 grafik, lo tinggal kurangin grafik yang tinggi dengan grafik yang lebih rendah. </p>
+<div class="row"><div class="col-xs-2">
+  $$
+  F(x) \ > \ G(X) \\
+  \int_{a}{b} F(x) \ - \ G(x) \ dx  \\
+  $$
+</div></div>
+<h4>Volume benda putar</h4>
+<p>Untuk volume benda putar juga sama. Bedanya di volume, kita make konsep silinder. Rumus luas silinder kan</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  v \ = \ π \ r^{2} \ t
+  $$
+</div></div>
+<p>Kalo tadi kita bikin balok yang banyak, sekarang kita bikin silindernya jadi banyak juga. Kalo tadi tinggi si baloknya jadi kecil banget seiiring bertambahnya jumlah balok, di sini juga sama tinggi silindernya kita ganti jadi <em>dx</em>. Disini juga jari jarinya kita ganti make fungsinya. Jadi volume suatu benda putar adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  v \ = \ π \ \int_{a}{b} \ (F(x))^{2} \ dx
+  $$
+</div></div>
+<p>Nah rumus diatas dipake kalo batasnya adalah garis F(x) dan sumbu x. Kalo batasnya lain gimana? Sama aja sama yang luas. Tinggal dikurang. Jadi</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  v \ = \ π \ \int_{a}{b} \ (F(x))^{2} \ - \ (G(x))^{2} \ dx
+  $$
+</div></div>
+<p>Gampang kan? Intinya kalo lo bisa yang luas, yang volume benda putar juga pasti bisa. Kalo lo belom ngerti, lo cek aja penjelasannya di videonya. Kalo udah ngerti, tinggal kerjain soalnya. Gampang kok.</p>
+{% endblock %}
