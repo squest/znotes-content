@@ -100,4 +100,7 @@
                             {:title "Integral 2"
                                                    :filename "cc2046x02"}
                                                    {:title "Integral 3"
-                                                                          :filename "cc2046x03"}]}]
+                                                                          :filename "cc2046x03"}]}
+      {:kode "CC 2956"
+       :contents [{:title "Integral"
+                            :filename "cc2956x01"}]}]
