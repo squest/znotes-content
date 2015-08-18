@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Definisi dan Konsep Dasar Integral</h3>
+<p>Biasanya integral juga jadi salah satu bab yang ditakuti nih di matematika SMA, khusunya integral dari fungsi trigonometri. Sebenernya gampang juga, kalo ngerti turunan, pasti integral juga bisa ngerti. Di bagian ini, selain kita akan nge-review konsep turunan, kita juga akan belajar definisi dan beberapa konsep dasarnya.</p>
+<h4>Definisi Integral</h4>
+<p>Kalo di turunan, kita kan punya definisi yang kita turunin sendiri make limit dari dua titik yang jaraknya hampir nol. Nah kalo integral kita gak punya definisi kaya gitu. Jadi secara definisi, integral adalah anti turunan. Maksudnya integral adalah kebalikan dari turunan. Contoh, lo punya fungsi (F(x)) dan (F'(x)). Kalo turunan F(x) adalah F'(x), maka integral dari F'(X) adalah F(x). Nah karena definisinya gitu doang, maka sifat-sifat integral juga bergantung dari turunannya. Kaya gimana tuh maksudnya? Misalnya ada fungsi begini</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  y \ = \ x^{2} \\
+  $$
+</div></div>
+<p>Kalo diturunin kan jadi</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  y \ = \ x^{2} \\
+  dy \ = \ d(x^{2}) \\
+  \frac{dy}{dx} \ = \ 2{x}
+  $$
+</div></div>
+<p>Karena turunannya begini, maka integralnya adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \int {dy} \ = \ \int 2{x} \ {dx} \\
+  y \ = \ x^{2}
+  $$
+</div></div>
+<p>Paham kan? Jadi karena turunan adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  dx^{n} \ = \ n \ x^{n-1} \ dx \\
+  dx \ = \ 1
+  $$
+</div></div>
+<p>Maka integral adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \int x^{n} \ dx \ = \ \frac{x^{n+1}}{n+1} \ + \ C
+  $$
+</div></div>
+<p>Dengan syarat</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  n \ \neq \ -1
+  $$
+</div></div>
+<p>Kenapa make (+C)? Coba aja lo liat sendiri dari turunannya, apakah turunan dari (x<sup>2</sup> + 2) sama dengan turunan dari (x<sup>2</sup> + 7)? Sama kan? maka dari itu kita make (+C).</p>
+<p>Berikut adalah beberapa sifat integral dan integral fungsi berdasarkan turunannya:</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \int k \ f(x) \ dx \ = \ k \int f(x) \ dx \\
+  \int  f(x) \ dx \pm \int gx(x) \ dx \ = \ \int  f(x) \ dx \pm \int  g(x) \ dx \\
+  . \\
+  d(sin(x)) \ = \ cos(x) \ dx \ ⇒ \ \int cos(x) \ d(x) \ = \ sin(x) \ + \ c \\
+  d(cos(x)) \ = \ -sin(x) \ dx \ ⇒ \ \int sin(x) \ d(x) \ = \ -cos(x) \ + \ c \\
+  d(Tan(x)) \ = \ sec(x) \ dx \ ⇒ \ \int sec(x) \ d(x) \ = \ Tan(x) \ + \ c \\
+  $$
+</div></div>
+<p>Cuma segini? Kalo integral dari <em>-cos</em>,<em>csc</em>,dll gimana? Ya tinggal lo cari aja sendiri dari turunannya, dapet kok gampang.</p>
+<p>Kira-kira udah kebayang kan integral kaya gimana? kalo masih bingung gak apa-apa kok. Di videonya akan dibahas dengan jelas. Di bagian <em>interactive modules</em> juga ada soalnya. Langsung aja deh lo tonton dan kerjain soalnya!</p>
+{% endblock %}

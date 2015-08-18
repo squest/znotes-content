@@ -93,4 +93,7 @@
                             {:title "Turunan 2"
                                                    :filename "cc2049x02"}
                                                    {:title "Turunan 3"
-                                                                          :filename "cc2049x03"}]}]
+                                                                          :filename "cc2049x03"}]}
+    {:kode "CC 2046"
+     :contents [{:title "Integral"
+                            :filename "cc2046x01"}]}]
