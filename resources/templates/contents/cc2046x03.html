@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Integral Tentu</h3>
+<p>Integral-integral sebelumnya dibahas, disebut juga integral tak tentu. Maksudnya, hasil dari integralnya masih persamaan dengan variable-variable yang kita gak jelas nilainya. Ada juga nih jenis integral lainnya yang disebut integral tentu. Dimana hasil dari integral tentu ini adalah angka. Secara matematis, integral tentu adalah</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \int_{a}^{b} f'(x) dx \ = \ F(x) \ |^{b}_{a} \ = \ F(b) \ - \ F(a) \\
+  (a,b \ | \ a,b \ ϵ \ R )
+  $$
+</div></div>
+<p>Jadi, misalnya ada contoh soal begini</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \int_{1}^{2} x \ dx
+  $$
+</div></div>
+<p>Untuk nyaru hasil integral tentunya; pertama-tama lo integralin si <em>x<sup>2</sup></em> seperti biasa</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \int_{1}^{2} x \ dx \\
+  = \ \frac{1}{2} x^{2} + C
+  $$
+</div></div>
+<p>Karena ini integral tentu, jadi lo gak perlu lagi si (+C). Lo tinggal masukin batas-batasnya ke fungsi hasil integralnya dan kurangin fungsi dengan batas yang satu dengan fungsi yang lain. Dalam hal ini, batasnya adalah 1 dan 2. jadi </p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \int_{1}^{2} x \ dx \\
+  = \ \frac{1}{2} x^{2} |_{1}^{2} \\
+  = \ \frac{1}{2} 2^{2} - \frac{1}{2} 1^{2} \\
+  = \ 2 \ - \ \frac{1}{2}
+  $$
+</div></div>
+<p>Dapet deh integral tentunnya</p>
+<div class="row"><div class="col-xs-2">
+  $$
+  \int_{1}^{2} x \ dx \ = \ 1 \ + \ \frac{1}{2} \
+  $$
+</div></div>
+<br>
+<h4>Sifat integral tentu</h4>
+<p>Karena definisi integral tentu seperti itu, maka berlaku sifat</p>
+ <div class="row"><div class="col-xs-2">
+   $$
+   \int_{a}^{b} f'x \ dx \ + \ \int_{b}^{c} f'x \ dx \ = \ \int_{a}^{c} f'x \ dx
+   $$
+ </div></div>
+ <p>Karena</p>
+ <div class="row"><div class="col-xs-2">
+   $$
+   \int_{a}^{b} f'x \ dx \ + \ \int_{b}^{c} f'x \ dx \ = F(b) \ - \ F(a) + \ F(c) \ - \ F(b) \ = \ F(c) \ - \ F(a) \ =  \ \int_{a}^{c} f'x \ dx
+   $$
+ </div></div>
+ <p>Segitu dulu untuk bab ini, Jangan lupa kerjain soalnya yang banyak ya.</p>
+{% endblock %}

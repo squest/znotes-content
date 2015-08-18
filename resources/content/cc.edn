@@ -98,4 +98,6 @@
      :contents [{:title "Integral"
                             :filename "cc2046x01"}
                             {:title "Integral 2"
-                                                   :filename "cc2046x02"}]}]
+                                                   :filename "cc2046x02"}
+                                                   {:title "Integral 3"
+                                                                          :filename "cc2046x03"}]}]
