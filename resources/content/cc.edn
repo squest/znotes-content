@@ -109,4 +109,9 @@
                             :filename "cc2957x01"}]}
       {:kode "CC 394"
        :contents [{:title "Persamaan garis"
-                            :filename "cc0394x01"}]}]
+                            :filename "cc0394x01"}]}
+      {:kode "CC 393"
+       :contents [{:title "Eksponen"
+                            :filename "cc0393x01"}
+                 {:title "Logaritma"
+                            :filename "cc0393x02"}]}]
