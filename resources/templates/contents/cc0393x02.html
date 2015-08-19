@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Logaritma</h3>
+  <p>Logaritma biasanya menjadi hal yang ditakuti sama anak-anak SMA atau sama mereka yang mau tes SBMPTN dan tes PTN lainnya. Entah takutnya karena masih asing dengan notasi <em>log</em> atau gimana. Sebenernya sih konsep logaritma itu simple aja, mirip dengan eksponen. Kalo eksponen itu dalah cara untuk mencari hasil pangkat dari suatu bilangan, seperti</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    a^{b} = c $$
+  </div></div>
+  <p>Nah kalo logaritma, adalah cara untuk mencari berapa nilai <strong>pangkat</strong>nya.</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    ^{a}\log c \ = \ b $$
+  </div></div>
+  <p>Jadi, kalo lo bisa eksponen, lo pasti bisa logartima juga. <br>
+    Contoh, untuk nyari nilai dari 2 yang dipangkatin 3, lo kan menggunakan eksponen tuh. Kalo ditulis jadi</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    2^{3} = 8 $$
+  </div></div>
+  <p>Sekarang, misalnya lo gak tau nih kalo 2 dipangkatin 3 hasilnya 8. Tapi lo mau tau, 8 itu adalah 2 yang dipangkatin berapa. Ya, caranya adalah pake logaritma. Jadi</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    ^{2}\log 8 \ = \ 3 $$
+  </div></div>
+  <p>Sekarang gue tanya, berapa</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    ^{2}\log 4 \ = \ ? $$
+  </div></div>
+  <p>Yup, jawabannya 2. Gampang kan? Ga usah kaget kalo lo ketemu <em>log-log</em>-an nanti di soal ujian. Intinya gampang kok mirip eksponen.</p>
+  <br>
+  <p>Kembali ke definisi logaritma</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    ^{a}\log c \ = \ b $$
+  </div></div>
+  <p>Di sini, ada beberapa ketentuan yang berlaku. diantaranya</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    0 \ < \ a \ < \ 1 \quad \vee \quad a \ > \ 1 \\
+    c \ ≧ \ 0 $$
+  </div></div>
+  <p>Dan juga</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    ^{1}\log x \ = \ 1 \\
+    ^{x}\log 1 \ = \ 0 $$
+  </div></div>
+
+    <h4>Sifat-Sifat Logaritma</h4>
+
+    <p>Selain itu semua, logaritma juga punya beberapa sifat nih. Sama aja kaya eksponen yang punya sifat-sifat juga. Bahkan, sifat-sifat logaritma juga berasal dari konsep-konsep di eksponen. Berikut adalah beberapa contoh sifat logaritma:</p>
+   <ul>
+     <li><div class="row"><div class="col-xs-2">
+       $$ ^{a}\log b \ + \ ^{a}\log c \ = \ ^{a}\log b*c $$
+     </div></div></li>
+     <li><div class="row"><div class="col-xs-2">
+       $$ ^{a}\log b \ - \ ^{a}\log c \ = \ ^{a}\log b/c $$
+     </div></div></li>
+     <li><div class="row"><div class="col-xs-2">
+       $$ ^{a}\log a^{b} \ = \ b $$
+     </div></div></li>
+     <li><div class="row"><div class="col-xs-2">
+       $$ a^{^{a}\log b} \ = \ b $$
+     </div></div></li>
+     <li><div class="row"><div class="col-xs-2">
+       $$ ^{a}\log b \ = \ \frac{^{n}\log b}{^{n}\log a} \\
+       0< n < 1 \quad \vee \quad n ≧ 1 $$
+     </div></div></li>
+     <li><div class="row"><div class="col-xs-2">
+       $$ ^{a}\log b \ = \ \frac{1}{^{b}\log a}$$
+     </div></div></li>
+     <li><div class="row"><div class="col-xs-2">
+       $$
+       ^{a}\log^{c} b^{d} \ = \ \frac{d}{c} * ^{a}\log b $$
+     </div></div></li>
+   </ul>
+   <p>Seperti biasa, gue ingatkan. Jangan pernah lo apalin doang sifat sifat diatas. Jadi bego lo ntar kalo ngapalin doang. Penjelasan detilnya ada kok di videonya Kak Sabda, dan juga supaya makin mantep, ada banyak banget tipe soal yang disediain dan disertakan pembahasannya. Mendingan langsung aja <em>check it out</em>, bro!</p>
+
+{% endblock %}
