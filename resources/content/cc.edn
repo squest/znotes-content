@@ -114,4 +114,7 @@
        :contents [{:title "Eksponen"
                             :filename "cc0393x01"}
                  {:title "Logaritma"
-                            :filename "cc0393x02"}]}]
+                            :filename "cc0393x02"}]}
+      {:kode "CC 400"
+       :contents [{:title "Persamaan Kuadrat"
+                            :filename "cc0400x01"}]}]
