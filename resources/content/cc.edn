@@ -117,4 +117,7 @@
                             :filename "cc0393x02"}]}
       {:kode "CC 400"
        :contents [{:title "Persamaan Kuadrat"
-                            :filename "cc0400x01"}]}]
+                            :filename "cc0400x01"}]}
+      {:kode "CC 406"
+       :contents [{:title "Fungsi Kuadrat"
+                            :filename "cc0406x01"}]}]
