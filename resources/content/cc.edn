@@ -106,4 +106,7 @@
                             :filename "cc2956x01"}]}
       {:kode "CC 2957"
        :contents [{:title "Integral 2"
-                            :filename "cc2957x01"}]}]
+                            :filename "cc2957x01"}]}
+      {:kode "CC 394"
+       :contents [{:title "Persamaan garis"
+                            :filename "cc0394x01"}]}]
