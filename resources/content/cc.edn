@@ -120,4 +120,10 @@
                             :filename "cc0400x01"}]}
       {:kode "CC 406"
        :contents [{:title "Fungsi Kuadrat"
-                            :filename "cc0406x01"}]}]
+                            :filename "cc0406x01"}]}
+      {:kode "CC 404"
+       :contents [{:title "Pertidaksamaan"
+                            :filename "cc0404x01"}]}
+      {:kode "CC 984"
+       :contents [{:title "Kinematika dasar"
+                           :filename "cc0984x01"}]}]
