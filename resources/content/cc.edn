@@ -126,4 +126,6 @@
                             :filename "cc0404x01"}]}
       {:kode "CC 984"
        :contents [{:title "Kinematika dasar"
-                           :filename "cc0984x01"}]}]
+                           :filename "cc0984x01"}
+                           {:title "Kinematika dasar 2"
+                                               :filename "cc0984x02"}]}]
