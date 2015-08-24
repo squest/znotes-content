@@ -128,4 +128,7 @@
        :contents [{:title "Kinematika dasar"
                            :filename "cc0984x01"}
                            {:title "Kinematika dasar 2"
-                                               :filename "cc0984x02"}]}]
+                                               :filename "cc0984x02"}]}
+     {:kode "CC 404"
+      :contents [{:title "Dinamika 1"
+                          :filename "cc0990x01"}]}]
