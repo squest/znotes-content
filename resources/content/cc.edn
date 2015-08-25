@@ -133,5 +133,7 @@
       :contents [{:title "Dinamika 1"
                           :filename "cc0990x01"}]}
     {:kode "CC 1842"
-     :contents [{:title "Dinamika 2"
-                          :filename "cc1842x01"}]}]
+     :contents [{:title "Dinamika 2: Usaha dan Energi"
+                          :filename "cc1842x01"}
+                          {:title "Dinamika 2: Momentum dan Impuls"
+                                               :filename "cc1842x02"}]}]
