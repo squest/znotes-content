@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Dinamika II: Usaha dan Energi </h3>
+  <p>Hal yang akan lo pelajari selanjutnya di fisika SBMPTN ini adalah konsep usaha, energi, momentum dan impuls. Oleh karena konsep yang lo pelajari masih termasuk dinamika, maka masih ada hubungannya nih sama gerak.</p>
+  <h4>Usaha</h4>
+  <p>Di fisika, usaha memiliki pengertian yang berbeda dengan usaha dalam konteks sehari-hari. Pengertian usaha, kalo dalam kasus benda yang bergerak ke suatu arah karena diberi gaya, adalah:</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    W \ = \ \overline{F} \ . \ \overline{s}
+    $$
+  </div></div>
+  <p>Dengan: <br>
+  W = Usaha suatu<br>
+  ̅F = Gaya yang diberi <br>
+  ̅s = perpindahan benda</p>
+  <p>Nah, kalo inget konsep perkalian dua vektor di matematika, usaha adalah</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    W \ = \ \overline{F} \ . \ \overline{s} \\
+    W \ = \ \left \| F \right \| \ \left \| s \right \| \ cosθ
+    $$
+  </div></div>
+  <p>Dengan: <br>
+  θ = sudut antara arah gaya dan arah perpindahan</p>
+  <p>Sebagai contoh, misalnya pak mamat tukang bakso mau jualan di depan komplek yang jauhnya 500m dari rumahnya. Massa gerobaknya adalah 10kg. Berapa usaha yang dibutuhkan Pak Mamat untuk menarik gerobaknya ke depan komplek jika percepatan Pak Mamat adalah 2m/s<sup>2</sup>?</p>
+  <p>Gampang aja, dari hukum newton kedua kita tau bahwa</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    \sum F \ = \ m*a
+    $$
+  </div></div>
+  <p>Dari situ kita bisa dapet jumlah gaya yang terjadi pada gerobak tersebut</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    \sum F \ = \ 10kg*2\frac{m}{s^{2}} \\
+    \sum F \ = \ 20 N
+    $$
+  </div></div>
+  <p>Anggap jalannya lurus, maka sudut antara arah gaya dan arah perpindahannya adalah nol, maka</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    W \ = \ \left \| F \right \| \ \left \| s \right \| \ cosθ \\
+    W \ = \ 20N * 500m  * 1 \\
+    W \ = \ 10.000 \ N*m \\
+    W \ = \ 10.000 \ \frac{kg*m}{s^{2}}*m
+    $$
+  </div></div>
+  <p>Kira-kira segitulah usaha Pak Mamat. <em>Kok satuannya gitu sih? Aneh banget</em>. Nah, itu adalah satuan dasarnya. Ribet kan nulisnya, maka dari itu dibikin lah satuan untuk usaha. Nama satuannya adalah <strong>Joule</strong>, sebagai penghargaan untuk fisikawan inggris James P. Joule.</p>
+  <br>
+  <h4>Energi</h4>
+  <p>Nah, selanjutnya adalah energi. Energi bisa dibilang adalah kemampuan suatu sistem untuk melakukan usaha, tapi definisi ini agak sulit sih untuk dipahami. Pengertian energi lainnya adalah properti suatu benda yang bisa dipindahkan ke benda lain tapi tidak bisa diciptakan maupun dimusnahkan. Nah, pengertian ini agak lebih mudah dimengerti, nanti akan dijelaskan kenapa pengertian ini lebih mudah dimengerti.</p>
+  <p>Salah dua contoh energi yang umum dikenal adalah energi kinetik dan energi potensial. energi kinetik adalah energi yang dimiliki suatu benda yang bergerak. Formula energi kinetik adalah:</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    E_{k} \ = \ \frac{1}{2} \ m \ v^{2}
+    $$
+  </div></div>
+  <p>Sedangkan energi potensial adalah energi yang dimiliki suatu benda karena posisinya terhadap suatu medan gaya. Contohnya kalo di bumi, energi potensial suatu benda ada karena posisinya terhadap medan gravitasi gravitasi. Formulanya adalah:</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    E_{p} \ = \ m*g*h
+    $$
+  </div></div>
+  <p>Dengan: <br>
+  m = Massa benda <br>
+  g = Gaya gravitasi <br>
+  h = Tinggi benda dari permukaan bumi</p>
+  <br>
+  <p>Segitu pendahuluannya, detilnya lo langsung aja tonton video pertama sampe video ke-enam di bab Dinamika II. Janga lupa kerjain juga soal-soalnya ya.</p>
+{% endblock %}
