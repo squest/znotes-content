@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Gaya Sentripetal dan Momentum Angular</h3>
+  <h4>Gaya sentripetal</h4>
+  <p>Di setiap gerak melingkar, pasti ada gaya melingkar supaya gerak melingkar tersebut konsisten terhadap titik pusatnya. Nah, gaya sentripetal ini bisa macem-macem, tergantung gerak melingkarnya kaya gimana. Misalnya, dalam bandul yang diputar, gaya sentripetalnya adalah tegangan si tali tersebut. Kalo gerak melingkar di orbit planet, gaya sentripetalnya adalah gaya gravitasi antara planet itu dan pusat tata surya dari planet itu, kalo di kita matahari. Gaya sentripetal itu sendiri adalah</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    F_{sp} \ = \ \frac{m*v^{2}}{r}
+    $$
+  </div></div>
+  <p>Nah, dari konsep gaya sentripetal ini, kita bisa tau kecepatan planetnya berapa. Kita tahu dari pembahasan sebelumnya, kita tahu bahwa gravitasi itu adalah</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    F_{g} \ = \ G \ \frac{m_{1}m_{2}}{r^{2}}
+    $$
+  </div></div>
+  <p>Sedangkan kalo di orbit planet, gaya gravitasi adalah gaya sentripetal adalah</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    F_{g} \ = \ F_{sp}
+    $$
+  </div></div>
+  <p>maka</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    G \ \frac{m_{M}m_{p}}{r^{2}} \ = \ \frac{m_{p}*v^{2}}{r} \\
+    v^{2} \ = \ G \ \frac{m_{M}}{r} \\
+    v \ = \ \sqrt{G \ \frac{m_{M}}{r}}
+    $$
+  </div></div>
+  <br>
+  <h4>Momentum angular</h4>
+  <p>Sebagaimana variable lain yang punya versi sudutnya, momentum juga punya versi sudutnya. Nilai momentum sudut sama juga dengan nilai variable sudut lainnya, yaitu variable versi liniernya dikali dengan jari-jari.</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    l \ = \ p \ r \\
+    l \ = \ m \ v \ r \\
+    $$
+  </div></div>
+  <p>Sedangkan, di note sebelumnya kita tau kalo v itu adalah</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    v \ = \ ω \ r
+    $$
+  </div></div>
+  <p>Maka, momentum angular adalah</p>
+  <div class="row"><div class="col-xs-2">
+    $$
+    l \ = \ p \ r \\
+    l \ = \ m \ \left ( \omega \ r \right ) \ r \\
+    l \ = \ m \ ω \ r^{2}
+    $$
+  </div></div>
+  <p>Kira-kira begitu lah gambaran umum gaya sentripetal dan momentum angular. Lebih dalamnya lagi, lo tonton aja videonya. Sikat habis juga tuh soalnya supaya lo paham banget konsepnya.</p>
+{% endblock %}
