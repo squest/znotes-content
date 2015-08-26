@@ -139,4 +139,6 @@
                                                :filename "cc1842x02"}]}
     {:kode "CC 1841"
      :contents [{:title "Gravitasi"
-                         :filename "cc1841x01"}]}]
+                         :filename "cc1841x01"}
+                         {:title "Gerak melingkar"
+                                             :filename "cc1841x02"}]}]
