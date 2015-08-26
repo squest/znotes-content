@@ -136,4 +136,7 @@
      :contents [{:title "Dinamika 2: Usaha dan Energi"
                           :filename "cc1842x01"}
                           {:title "Dinamika 2: Momentum dan Impuls"
-                                               :filename "cc1842x02"}]}]
+                                               :filename "cc1842x02"}]}
+    {:kode "CC 1841"
+     :contents [{:title "Gravitasi"
+                         :filename "cc1841x01"}]}]
