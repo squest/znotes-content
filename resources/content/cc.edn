@@ -146,6 +146,10 @@
                                                                  :filename "cc1841x03"}]}
    {:kode "CC 559"
     :contents [{:title "Atom: Partikel Penyusun Atom"
+<<<<<<< HEAD
                        :filename "cc0559x01"}
                        {:title "Sejarah dan Perkembangan Teori Atom"
                                           :filename "cc0559x02"}]}]
+=======
+                       :filename "cc0559x01"}]}]
+>>>>>>> origin/master
