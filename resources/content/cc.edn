@@ -143,4 +143,9 @@
                          {:title "Gerak melingkar"
                                              :filename "cc1841x02"}
                                              {:title "Gaya Sentripetal dan Momentum Angular"
-                                                                 :filename "cc1841x03"}]}]
+                                                                 :filename "cc1841x03"}]}
+   {:kode "CC 559"
+    :contents [{:title "Atom: Partikel Penyusun Atom"
+                       :filename "cc0559x01"}
+                       {:title "Sejarah dan Perkembangan Teori Atom"
+                                          :filename "cc0559x02"}]}]
