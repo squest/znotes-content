@@ -152,4 +152,6 @@
 
    {:kode "CC 851"
              :contents [{:title "Sel teori: sejarah teori sel"
-                                   :filename "cc0851x01"}]}]
+                                   :filename "cc0851x01"}
+                                   {:title "Organel sel: Membran sel atau membran plasma"
+                                                         :filename "cc0851x02"}]}]
