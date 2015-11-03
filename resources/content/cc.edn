@@ -146,4 +146,14 @@
                                                                  :filename "cc1841x03"}]}
    {:kode "CC 559"
     :contents [{:title "Atom: Partikel Penyusun Atom"
-                       :filename "cc0559x01"}]}]
+                       :filename "cc0559x01"}
+                       {:title "Sejarah dan Perkembangan Teori Atom"
+                                          :filename "cc0559x02"}]}
+
+   {:kode "CC 851"
+             :contents [{:title "Sel teori: sejarah teori sel"
+                                   :filename "cc0851x01"}
+                                   {:title "Organel sel: Membran sel atau membran plasma"
+                                                         :filename "cc0851x02"}
+                                                         {:title "Organel sel: Mitokondria"
+                                                                               :filename "cc0851x03"}]}]
