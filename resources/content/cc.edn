@@ -151,7 +151,9 @@
                                           :filename "cc0559x02"}]}
    {:kode "CC 565"
    :contents [{:title "Stoikiometri"
-                      :filename "cc0565x01"}]}
+                      :filename "cc0565x01"}
+                      {:title "Hukum dasar Kimia"
+                                         :filename "cc0565x02"}]}
 
    {:kode "CC 851"
              :contents [{:title "Sel teori: sejarah teori sel"
