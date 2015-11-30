@@ -154,7 +154,9 @@
                       :filename "cc0565x01"}
                       {:title "Hukum dasar Kimia"
                                          :filename "cc0565x02"}]}
-
+   {:kode "CC 570"
+       :contents [{:title "Reaksi Redoks: Pengertian dan Bilangan Oksidasi"
+                                                               :filename "cc0570x01"}]}
    {:kode "CC 851"
              :contents [{:title "Sel teori: sejarah teori sel"
                                    :filename "cc0851x01"}
