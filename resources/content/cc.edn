@@ -156,7 +156,9 @@
                                          :filename "cc0565x02"}]}
    {:kode "CC 570"
        :contents [{:title "Reaksi Redoks: Pengertian dan Bilangan Oksidasi"
-                                                               :filename "cc0570x01"}]}
+                                                               :filename "cc0570x01"}
+                                                               {:title "Reaksi Redoks: Menyetarakan Reaksi Redoks"
+                                                                                                                       :filename "cc0570x02"}]}
    {:kode "CC 851"
              :contents [{:title "Sel teori: sejarah teori sel"
                                    :filename "cc0851x01"}
